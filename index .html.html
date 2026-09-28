@@ -1,0 +1,3029 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>منصة وِفَاق | Wefaq — فرص، تمويل، قرآن، لغات، مناقصات ومزادات</title>
+  <meta name="description" content="منصة وِفَاق تربط أصحاب المشاريع والتمويل والشراكات، المقارئ القرآنية، معلمي اللغات، عروض الخدمات، المناقصات والمزادات حول العالم.">
+  <meta name="theme-color" content="#059669">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="canonical" href="https://wefaq-khair.org/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:url" content="https://wefaq-khair.org/">
+  <meta property="og:site_name" content="وِفَاق | Wefaq">
+  <meta property="og:title" content="منصة وِفَاق | فرص وتمويل وقرآن ومناقصات">
+  <meta property="og:description" content="مشاريع وتمويل وشراكات، مقارئ قرآنية، تعليم لغات، خدمات، مناقصات ومزادات.">
+  <meta property="og:image" content="https://wefaq-khair.org/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="منصة وِفَاق | Wefaq">
+  <meta name="twitter:description" content="منصة فرص عربية عالمية — مشاريع، قرآن، لغات، مناقصات.">
+  <meta name="twitter:image" content="https://wefaq-khair.org/og.png">
+  
+  <!-- Google Fonts: Tajawal & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Supabase JS Client -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  
+
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+              navy: '#0b192c',
+              gold: '#d97706',
+              accent: '#2563eb',
+              purple: '#7c3aed'
+            }
+          },
+          fontFamily: {
+            sans: ['Tajawal', 'Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { font-family: 'Tajawal', 'Inter', sans-serif; }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(229, 231, 235, 0.8);
+    }
+    .dark .glass-card {
+      background: rgba(15, 23, 42, 0.88);
+      border: 1px solid rgba(51, 65, 85, 0.8);
+    }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.05); }
+    ::-webkit-scrollbar-thumb { background: #10b981; border-radius: 4px; }
+    
+    /* Google Translate Clean Styling */
+    .goog-te-banner-frame { display: none !important; }
+    body { top: 0px !important; }
+    #google_translate_element select {
+      background-color: transparent;
+      border: none;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 4px;
+    }
+  </style>
+
+  <!-- Google Translate AI Script Integration (Free & Fast) -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'ar',
+        includedLanguages: 'ar,en,fr,ur,tr,es,de,zh-CN',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async defer></script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-300">
+
+  <!-- Header Section -->
+  <header class="sticky top-0 z-40 w-full border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 via-brand-600 to-emerald-400 flex items-center justify-center text-white text-xl font-bold shadow-md shadow-emerald-500/20">
+          و
+        </div>
+        <div>
+          <span class="text-xl font-extrabold bg-gradient-to-l from-brand-800 via-brand-600 to-emerald-500 dark:from-emerald-400 dark:to-teal-200 bg-clip-text text-transparent">
+            منصة وِفَاق العالمية
+          </span>
+          <span class="block text-[10px] font-semibold tracking-wider text-slate-500 dark:text-slate-400 uppercase">
+            Global & Regional Matching Radar
+          </span>
+        </div>
+      </div>
+
+      <!-- Quick Nav Links -->
+      <nav class="hidden lg:flex items-center gap-6 text-xs font-semibold text-slate-600 dark:text-slate-300">
+        <a href="#radar-section" class="hover:text-brand-600 dark:hover:text-emerald-400 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-radar text-brand-500"></i> الرادار الشامل
+        </a>
+        
+        <a href="#marketplace-section" class="hover:text-brand-600 dark:hover:text-emerald-400 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-earth-americas text-blue-500"></i> سوق الفرص والتحفيظ
+        </a>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        
+        <!-- AI Language Translator Widget -->
+        <div class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1 flex items-center gap-1 text-xs font-semibold">
+          <i class="fa-solid fa-language text-brand-500"></i>
+          <div id="google_translate_element"></div>
+        </div>
+
+        <!-- Currency Selector -->
+        <select id="currency-select" onchange="renderCards();" class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-xs py-1.5 px-2 font-semibold text-slate-700 dark:text-slate-300 focus:outline-none">
+          <option value="SAR" selected>SAR (ر.س)</option>
+          <option value="USD">USD ($)</option>
+          <option value="EGP">EGP (ج.م)</option>
+          <option value="AED">AED (د.إ)</option>
+          <option value="EUR">EUR (€)</option>
+        </select>
+
+        <!-- Dark/Light Toggle -->
+        <button id="theme-toggle" onclick="toggleTheme()" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+          <i id="theme-icon" class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- New Listing Button -->
+        <button onclick="openCreateModal()" class="bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs px-3 py-2 rounded-lg shadow transition transform active:scale-95 flex items-center gap-1.5">
+          <i class="fa-solid fa-plus"></i>
+          <span class="hidden sm:inline">إدراج طلب / فرصة</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-8">
+    
+    <!-- Hero Banner -->
+    <section class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-brand-900 via-brand-navy to-slate-900 text-white p-6 sm:p-10 shadow-xl">
+      <div class="absolute -right-12 -top-12 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -left-12 -bottom-12 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-8 space-y-4">
+          <div class="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs px-3 py-1 rounded-full font-medium">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            ملتقى جذب الاستثمار الشامل والمقارئ القرآنية العالمية
+          </div>
+          <h1 class="text-2xl sm:text-4xl font-extrabold leading-tight">
+            المنصة الموحدة للمشاريع العربية، طلب التمويل، الشراكات، والمقارئ القرآنية العالمية
+          </h1>
+          <p class="text-slate-300 text-xs sm:text-sm max-w-2xl font-light leading-relaxed">
+            نربط بين عارضي الأفكار والمشاريع، طالبي الشراكة والتمويل، ومعدي دراسات الجدوى في العالم العربي، إلى جانب مظلة عالمية لطالبي ومقدِمي تحفيظ القرآن الكريم بالسند المتصل، وقسم لتعليم اللغات وفي مقدمتها العربية.
+          </p>
+
+          <div class="pt-2 flex flex-wrap gap-3 items-center">
+            <button onclick="openCreateModal('quran')" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-4 py-2.5 rounded-lg text-xs sm:text-sm shadow flex items-center gap-2 transition">
+              <i class="fa-solid fa-book-quran"></i>
+              طلب / تقديم تحفيظ قرآني
+            </button>
+            <button onclick="openCreateModal('languages')" class="bg-teal-500 hover:bg-teal-600 text-slate-950 font-bold px-4 py-2.5 rounded-lg text-xs sm:text-sm shadow flex items-center gap-2 transition">
+              <i class="fa-solid fa-language"></i>
+              تعليم / تعلّم لغة
+            </button>
+            <button onclick="openCreateModal('invest')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-4 py-2.5 rounded-lg text-xs sm:text-sm shadow flex items-center gap-2 transition">
+              <i class="fa-solid fa-handshake"></i>
+              عرض مشروع / طلب تمويل وشريك
+            </button>
+            <button onclick="triggerFeedRefresh()" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-medium px-3.5 py-2.5 rounded-lg text-xs sm:text-sm flex items-center gap-2 transition">
+              <i id="sync-icon" class="fa-solid fa-arrows-rotate"></i>
+              <span>مزامنة السحاب</span>
+            </button>
+
+            <!-- Social Share Main Trigger -->
+            <button onclick="sharePlatform()" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-3.5 py-2.5 rounded-lg text-xs sm:text-sm flex items-center gap-2 shadow transition">
+              <i class="fa-solid fa-share-nodes"></i>
+              <span>نشر المنصة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Metric Grid -->
+        <div class="lg:col-span-4 space-y-3">
+          <div class="grid grid-cols-2 gap-3 text-center">
+            <div class="bg-white/5 border border-white/10 rounded-xl p-3 backdrop-blur-sm">
+              <div class="text-xs text-slate-400">طالبي ومقارئ القرآن</div>
+              <div id="stat-quran" class="text-xl sm:text-2xl font-black text-emerald-400 mt-1">0</div>
+              <div class="text-[10px] text-emerald-300/70">حول العالم</div>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl p-3 backdrop-blur-sm">
+              <div class="text-xs text-slate-400">المشاريع والعارضين</div>
+              <div id="stat-projects" class="text-xl sm:text-2xl font-black text-blue-400 mt-1">0</div>
+              <div class="text-[10px] text-blue-300/70">بالوطن العربي</div>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl p-3 backdrop-blur-sm">
+              <div class="text-xs text-slate-400">طالبي التمويل والشريك</div>
+              <div id="stat-funding" class="text-xl sm:text-2xl font-black text-amber-400 mt-1">0</div>
+              <div class="text-[10px] text-amber-300/70">فرص استثمارية</div>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl p-3 backdrop-blur-sm">
+              <div class="text-xs text-slate-400">دراسات الجدوى والأفكار</div>
+              <div id="stat-ideas" class="text-xl sm:text-2xl font-black text-purple-400 mt-1">0</div>
+              <div class="text-[10px] text-purple-300/70">جاهزة للتنفيذ</div>
+            </div>
+            <div class="col-span-2 bg-white/5 border border-white/10 rounded-xl p-3 backdrop-blur-sm">
+              <div class="text-xs text-slate-400">معلمو ومتعلمو اللغات</div>
+              <div id="stat-languages" class="text-xl sm:text-2xl font-black text-teal-400 mt-1">0</div>
+              <div class="text-[10px] text-teal-300/70">العربية وغيرها</div>
+            </div>
+          </div>
+
+          <!-- Visitor Counter Section (Realtime + Country) -->
+          <div class="bg-gradient-to-l from-cyan-500/15 via-blue-500/10 to-indigo-500/15 border border-cyan-400/25 rounded-xl p-3 backdrop-blur-sm space-y-2.5">
+            <div class="flex items-center justify-between gap-3">
+              <div class="flex items-center gap-2">
+                <div class="w-9 h-9 rounded-lg bg-cyan-500/20 text-cyan-300 flex items-center justify-center">
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+                <div>
+                  <div class="text-[11px] text-slate-400 font-medium">عداد زوار المنصة</div>
+                  <div class="text-lg font-black text-cyan-300 leading-tight">
+                    <span id="stat-visitors-total">0</span>
+                    <span class="text-[10px] font-semibold text-slate-400 mr-1">زيارة إجمالية</span>
+                  </div>
+                </div>
+              </div>
+              <div class="text-left">
+                <div class="text-[10px] text-slate-400">متصل الآن</div>
+                <div id="stat-visitors-online-count" class="text-base font-bold text-emerald-300 flex items-center gap-1 justify-end">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span id="stat-online-num">1</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between text-[10px] text-slate-400">
+              <span id="stat-visitors-today">اليوم: 0</span>
+              <span id="stat-visitors-session">الجلسة: 1</span>
+              <span id="stat-my-country" class="text-cyan-300/90 font-semibold">—</span>
+            </div>
+            <!-- توزيع الزوار حسب البلد -->
+            <div id="visitors-by-country" class="pt-1.5 border-t border-white/10 space-y-1 max-h-28 overflow-y-auto">
+              <div class="text-[10px] text-slate-500 text-center py-1">جاري تحميل التوزيع حسب البلد...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feasibility & ROI Calculator Section -->
+    
+
+    <!-- Smart Filter Radar Section -->
+    <section id="radar-section" class="scroll-mt-20">
+      <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 sm:p-6 shadow-sm space-y-4">
+        
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-filter text-brand-600 dark:text-emerald-400"></i>
+            <h3 class="font-bold text-slate-900 dark:text-white text-base">رادار الفلترة الذكي الشامل</h3>
+          </div>
+
+          <!-- Category Tabs -->
+          <div class="flex items-center gap-1.5 overflow-x-auto pb-2 lg:pb-0 text-xs">
+            <button id="tab-all" onclick="setCategoryFilter('all')" class="px-3 py-1.5 rounded-lg bg-brand-600 text-white font-bold transition whitespace-nowrap">الكل</button>
+            <button id="tab-quran" onclick="setCategoryFilter('quran')" class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 font-medium transition whitespace-nowrap">📖 تحفيظ قرآن (عالمي)</button>
+            <button id="tab-projects" onclick="setCategoryFilter('projects')" class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 font-medium transition whitespace-nowrap">🏬 مشاريع وعارضين</button>
+            <button id="tab-demands" onclick="setCategoryFilter('demands')" class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 font-medium transition whitespace-nowrap">🛒 طالبو الخدمات</button>
+            <button id="tab-funding" onclick="setCategoryFilter('funding')" class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 font-medium transition whitespace-nowrap">💰 طالبو تمويل وشريك</button>
+            <button id="tab-ideas" onclick="setCategoryFilter('ideas')" class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 font-medium transition whitespace-nowrap">💡 أفكار ودراسات جدوى</button>
+            <button id="tab-languages" onclick="setCategoryFilter('languages')" class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 font-medium transition whitespace-nowrap">🌍 تعليم اللغات</button>
+            <button id="tab-services" onclick="setCategoryFilter('services')" class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 font-medium transition whitespace-nowrap">🛠 عروض خدمات</button>
+            <button id="tab-tenders" onclick="setCategoryFilter('tenders')" class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 font-medium transition whitespace-nowrap">📑 مناقصات</button>
+            <button id="tab-auctions" onclick="setCategoryFilter('auctions')" class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 font-medium transition whitespace-nowrap">🔨 مزادات</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Filter Controls -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <!-- Keyword -->
+          <div class="relative">
+            <i class="fa-solid fa-magnifying-glass absolute right-3 top-3 text-slate-400 text-xs"></i>
+            <input type="text" id="search-keyword" oninput="renderCards()" placeholder="بحث بالكلمة، الشيخ، المشروع، البلد..." class="w-full pr-9 pl-3 py-2 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg text-xs focus:ring-2 focus:ring-brand-500 focus:outline-none">
+          </div>
+
+          <!-- Region / Country -->
+          <div>
+            <select id="filter-region" onchange="renderCards()" class="w-full py-2 px-3 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg text-xs focus:ring-2 focus:ring-brand-500 focus:outline-none">
+              <option value="all">كل الدول والشرق الأوسط والعالم</option>
+              <option value="GLOBAL">عالمي (حول العالم - إلكتروني)</option>
+              <option value="PALESTINE">فلسطين وغزة</option>
+              <option value="GAZA">غزة تحديداً</option>
+              <option value="AFRICA">أفريقيا (شرق وغرب وشمال)</option>
+              <option value="FOREIGN">دول أجنبية (أوروبا وأمريكا وآسيا)</option>
+              <option value="KSA">السعودية (KSA)</option>
+              <option value="EGP">مصر (Egypt)</option>
+              <option value="UAE">الإمارات (UAE)</option>
+              <option value="QAT">قطر (Qatar)</option>
+              <option value="KW">الكويت (Kuwait)</option>
+              <option value="GCC">باقي الخليج العربي</option>
+              <option value="MAGHREB">المغرب العربي</option>
+              <option value="LEVANT">بلاد الشام (الأردن، سوريا، لبنان)</option>
+            </select>
+          </div>
+
+          <!-- Offer / Demand Type -->
+          <div>
+            <select id="filter-type" onchange="renderCards()" class="w-full py-2 px-3 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg text-xs focus:ring-2 focus:ring-brand-500 focus:outline-none">
+              <option value="all">جميع أنواع الطلبات والعروض</option>
+              <option value="offer">عرض (متاح للتنفيذ/للبيع)</option>
+              <option value="demand">طلب (مطلوب شراء/تنفيذ)</option>
+              <option value="seeking_partner">مطلوب شريك (Co-founder)</option>
+              <option value="seeking_funds">مطلوب تمويل (Funding)</option>
+            </select>
+          </div>
+
+          <!-- Trust & Status Badge -->
+          <div>
+            <select id="filter-badge" onchange="renderCards()" class="w-full py-2 px-3 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg text-xs focus:ring-2 focus:ring-brand-500 focus:outline-none">
+              <option value="all">جميع مستويات التوثيق</option>
+              <option value="sanad">مجاز بالسند المتصل</option>
+              <option value="reviewed">مُراجَع من الإدارة (قارئ / معلم)</option>
+              <option value="feasibility">مرفق دراسة جدوى جاهزة</option>
+              <option value="verified">مرخص / سجل موثق</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Extra Quran Specific Controls -->
+        <div id="quran-extra-filters" class="hidden pt-2 border-t border-slate-100 dark:border-slate-800 grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div>
+            <label class="block text-[11px] font-semibold text-slate-500 mb-1">الرواية القرآنية / القراءة</label>
+            <select id="filter-riwaya" onchange="renderCards()" class="w-full py-1.5 px-2 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-md text-xs">
+              <option value="all">جميع الروايات والقراءات</option>
+              <option value="حفص عن عاصم">حفص عن عاصم</option>
+              <option value="ورش عن نافع">ورش عن نافع</option>
+              <option value="قالون عن نافع">قالون عن نافع</option>
+              <option value="الدوري عن أبي عمرو">الدوري عن أبي عمرو</option>
+              <option value="القراءات العشر">القراءات العشر (صغرى/كبرى)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-[11px] font-semibold text-slate-500 mb-1">الفئة المستهدفة</label>
+            <select id="filter-gender" onchange="renderCards()" class="w-full py-1.5 px-2 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-md text-xs">
+              <option value="all">الكل (رجال / نساء / أطفال)</option>
+              <option value="أطفال">أطفال وكتاتيب ناشئة</option>
+              <option value="رجال">رجال فقط</option>
+              <option value="نساء">نساء وفرق معلمات</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-[11px] font-semibold text-slate-500 mb-1">طبيعة الدراسة</label>
+            <select id="filter-mode" onchange="renderCards()" class="w-full py-1.5 px-2 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-md text-xs">
+              <option value="all">أونلاين (عالمي) وحضوري</option>
+              <option value="online">عن بُعد (مقارئ إلكترونية حول العالم)</option>
+              <option value="in_person">حضوري (مساجد ومراكز فرعية)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Language learning filters -->
+        <div id="languages-extra-filters" class="hidden pt-2 border-t border-slate-100 dark:border-slate-800 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-[11px] font-semibold text-slate-500 mb-1">اللغة / المسار</label>
+            <select id="filter-lang-track" onchange="renderCards()" class="w-full py-1.5 px-2 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-md text-xs">
+              <option value="all">جميع اللغات والمسارات</option>
+              <option value="العربية للناطقين بغيرها">العربية للناطقين بغيرها</option>
+              <option value="العربية الفصحى وعلوم اللغة">العربية الفصحى وعلوم اللغة</option>
+              <option value="عربية القرآن والتجويد اللغوي">عربية القرآن والتجويد اللغوي</option>
+              <option value="تبادل لغوي">تبادل لغوي (Language Exchange)</option>
+              <option value="الإنجليزية">الإنجليزية</option>
+              <option value="لغة أخرى">لغة أخرى</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-[11px] font-semibold text-slate-500 mb-1">المستوى</label>
+            <select id="filter-lang-level" onchange="renderCards()" class="w-full py-1.5 px-2 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-md text-xs">
+              <option value="all">كل المستويات</option>
+              <option value="مبتدئ">مبتدئ</option>
+              <option value="متوسط">متوسط</option>
+              <option value="متقدم">متقدم</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Main Cards Grid Section -->
+    <section id="marketplace-section" class="space-y-4">
+      <div class="flex flex-col gap-3">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div class="flex items-center gap-2 flex-wrap">
+            <h2 class="text-lg font-extrabold text-slate-900 dark:text-white">قائمة الطلبات والفرص المسجلة بالرادار</h2>
+            <span id="results-count-badge" class="bg-brand-100 text-brand-800 dark:bg-brand-900/50 dark:text-brand-300 text-xs font-bold px-2.5 py-0.5 rounded-full">0 نتائج</span>
+          </div>
+
+          <div class="flex items-center gap-2 flex-wrap">
+            <!-- قراء أفريقيا -->
+            <button onclick="showAfricaQuranReciters()" class="text-xs bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3 py-1.5 rounded-lg shadow flex items-center gap-1.5 transition">
+              <i class="fa-solid fa-book-quran"></i>
+              <span>قراء القرآن في أفريقيا</span>
+            </button>
+            <button onclick="exportCardsJSON()" class="text-xs bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 flex items-center gap-1.5 transition">
+              <i class="fa-solid fa-download"></i>
+              <span>تصدير JSON</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- شريط المطابقة الذكية -->
+        <div id="smart-match-bar" class="hidden bg-gradient-to-l from-purple-500/10 via-indigo-500/10 to-emerald-500/10 border border-indigo-300/30 dark:border-indigo-700/40 rounded-xl p-3">
+          <div class="flex items-center gap-2 mb-2">
+            <i class="fa-solid fa-wand-magic-sparkles text-indigo-500"></i>
+            <span class="text-xs font-bold text-indigo-700 dark:text-indigo-300">اقتراحات المطابقة الذكية</span>
+          </div>
+          <div id="smart-match-list" class="flex flex-wrap gap-2 text-[11px]"></div>
+        </div>
+      </div>
+
+      <!-- Container Grid -->
+      <div id="cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Dynamic JS Cards Injected Here -->
+      </div>
+
+      <!-- Empty State Indicator -->
+      <div id="empty-state" class="hidden text-center py-12 bg-white dark:bg-slate-900 rounded-2xl border border-dashed border-slate-300 dark:border-slate-800">
+        <div class="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-400 flex items-center justify-center mx-auto mb-3">
+          <i class="fa-solid fa-inbox text-xl"></i>
+        </div>
+        <h3 class="text-base font-bold text-slate-700 dark:text-slate-300">لم نجد نتائج مطابقة لخيارات الفلترة الحالية</h3>
+        <p class="text-xs text-slate-400 mt-1 max-w-sm mx-auto">جرب تغيير شروط البحث أو اضغط إعادة ضبط لتصفح جميع البطاقات.</p>
+        <button onclick="resetFilters()" class="mt-4 text-xs font-bold text-brand-600 hover:underline">إعادة ضبط التصفية</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- شريط موبايل -->
+  <nav id="mobile-bottom-nav" class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-slate-950/95 backdrop-blur border-t border-slate-800 flex justify-around items-center py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] text-[10px] font-semibold text-slate-400">
+    <a href="#radar-section" class="flex flex-col items-center gap-0.5 px-2 py-1 hover:text-emerald-400"><i class="fa-solid fa-radar text-base"></i>الرادار</a>
+    <a href="#marketplace-section" class="flex flex-col items-center gap-0.5 px-2 py-1 hover:text-emerald-400"><i class="fa-solid fa-store text-base"></i>السوق</a>
+    <button type="button" onclick="openCreateModal()" class="flex flex-col items-center gap-0.5 px-2 py-1 text-emerald-400"><i class="fa-solid fa-plus-circle text-xl"></i>أضف</button>
+    <button type="button" onclick="openMine()" class="flex flex-col items-center gap-0.5 px-2 py-1 hover:text-emerald-400"><i class="fa-solid fa-user text-base"></i>حسابي</button>
+    <button type="button" onclick="openAuthModal()" class="flex flex-col items-center gap-0.5 px-2 py-1 hover:text-emerald-400"><i class="fa-solid fa-right-to-bracket text-base"></i>دخول</button>
+  </nav>
+  <style>@media(max-width:768px){body{padding-bottom:4.5rem}}</style>
+
+  <!-- MODAL 1: Direct Contact / WhatsApp Modal -->
+  <div id="contact-modal" class="fixed inset-0 z-50 hidden bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-md w-full p-6 shadow-2xl relative">
+      <button onclick="closeContactModal()" class="absolute top-4 left-4 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-lg">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900 dark:text-white text-base">التواصل المباشر مع صاحب العرض/الطلب</h3>
+          <p class="text-xs text-slate-500">تم صياغة رسالة توافقية تلقائية جاهزة للإرسال</p>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">اسمك أو جهتك</label>
+          <input type="text" id="sender-name" value="مستثمر / طالب تحفيظ عبر منصة وفاق" oninput="updateWhatsAppTemplate()" class="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg py-2 px-3 text-xs focus:ring-2 focus:ring-brand-500">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">معاينة نص الرسالة</label>
+          <textarea id="whatsapp-template-text" rows="5" readonly class="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg p-3 text-xs text-slate-700 dark:text-slate-300 font-mono resize-none"></textarea>
+        </div>
+
+        <div class="flex items-center gap-2 pt-2">
+          <button id="send-whatsapp-btn" onclick="sendWhatsAppMessage()" class="flex-grow bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2.5 rounded-lg flex items-center justify-center gap-2 shadow transition">
+            <i class="fa-brands fa-whatsapp text-sm"></i>
+            فتح المحادثة المباشرة عبر واتساب
+          </button>
+          <button onclick="copyContactText()" class="bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs px-3 py-2.5 rounded-lg border border-slate-300 dark:border-slate-700 transition">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: Social Share Modal -->
+  <div id="share-modal" class="fixed inset-0 z-50 hidden bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-sm w-full p-6 shadow-2xl relative text-center">
+      <button onclick="closeShareModal()" class="absolute top-4 left-4 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400 flex items-center justify-center text-xl mx-auto mb-3">
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+      
+      <h3 class="font-bold text-slate-900 dark:text-white text-base mb-1">مشاركة الفرصة عبر وسائل التواصل</h3>
+      <p class="text-xs text-slate-500 mb-5">انشر الفرصة الاستثمارية أو القرآنية للوصول لأكبر عدد من المهتمين</p>
+
+      <div class="grid grid-cols-4 gap-3 mb-5">
+        <button onclick="shareVia('whatsapp')" class="flex flex-col items-center gap-1 text-emerald-600 hover:opacity-80 transition">
+          <div class="w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-950 flex items-center justify-center text-lg"><i class="fa-brands fa-whatsapp"></i></div>
+          <span class="text-[10px] font-bold">واتساب</span>
+        </button>
+
+        <button onclick="shareVia('telegram')" class="flex flex-col items-center gap-1 text-sky-500 hover:opacity-80 transition">
+          <div class="w-10 h-10 rounded-full bg-sky-100 dark:bg-sky-950 flex items-center justify-center text-lg"><i class="fa-brands fa-telegram"></i></div>
+          <span class="text-[10px] font-bold">تلجرام</span>
+        </button>
+
+        <button onclick="shareVia('x')" class="flex flex-col items-center gap-1 text-slate-800 dark:text-slate-200 hover:opacity-80 transition">
+          <div class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-lg"><i class="fa-brands fa-x-twitter"></i></div>
+          <span class="text-[10px] font-bold">تويتر / X</span>
+        </button>
+
+        <button onclick="shareVia('linkedin')" class="flex flex-col items-center gap-1 text-blue-700 hover:opacity-80 transition">
+          <div class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-950 flex items-center justify-center text-lg"><i class="fa-brands fa-linkedin-in"></i></div>
+          <span class="text-[10px] font-bold">لينكدإن</span>
+        </button>
+      </div>
+
+      <div class="flex items-center gap-2 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg p-2">
+        <input type="text" id="share-link-input" readonly value="" class="bg-transparent text-xs text-slate-500 w-full focus:outline-none">
+        <button onclick="copyShareLink()" class="bg-slate-200 dark:bg-slate-800 text-xs px-2.5 py-1 rounded font-bold hover:bg-slate-300">نسخ</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: Create Opportunity / Demand Modal -->
+  <div id="create-modal" class="fixed inset-0 z-50 hidden bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-xl w-full p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeCreateModal()" class="absolute top-4 left-4 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <div class="mb-5">
+        <h3 class="font-bold text-slate-900 dark:text-white text-lg">إدراج طلب / مشروع / حلقة تحفيظ جديدة</h3>
+        <p class="text-xs text-slate-500">اختر الفئة المحددة وسجل بياناتك ليصلك المتوافقون فوراً</p>
+      </div>
+
+      <form id="create-card-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">العنوان الرئيسي *</label>
+            <input type="text" id="new-title" required placeholder="مثال: طلب تمويل لمحل حلويات / حلقة إجازة بالسند للأطفال" class="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg py-2 px-3 text-xs focus:ring-2 focus:ring-brand-500">
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">الفئة الرئيسية *</label>
+            <select id="new-category" required onchange="toggleFormFields()" class="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg py-2 px-3 text-xs focus:ring-2 focus:ring-brand-500">
+              <option value="quran">📖 تحفيظ قرآن كريم (عالمي)</option>
+              <option value="projects">🏬 مشروع قائم / عارض مشروع</option>
+              <option value="demands">🛒 طالب خدمات / توريد</option>
+              <option value="funding">💰 طالب تمويل / شراكة استثمارية</option>
+              <option value="ideas">💡 فكرة أو دراسة جدوى (عرضاً أو طلباً)</option>
+              <option value="languages">🌍 تعليم اللغات (معلم يعرض / متعلم يطلب)</option>
+              <option value="services">🛠 عرض خدمة (مستقل / شركة / حرفي / معلم)</option>
+              <option value="tenders">📑 مناقصة (أطلب عروض أسعار من المتقدمين)</option>
+              <option value="auctions">🔨 مزاد (أعرض سلعة أو خدمة لأعلى سعر)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">البلد / المنطقة *</label>
+            <select id="new-region" required class="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg py-2 px-3 text-xs focus:ring-2 focus:ring-brand-500">
+              <option value="GLOBAL">عالمي (حول العالم - إلكتروني)</option>
+              <option value="PALESTINE">فلسطين (الضفة وغزة)</option>
+              <option value="GAZA">غزة</option>
+              <option value="AFRICA">أفريقيا</option>
+              <option value="FOREIGN">دول أجنبية (أوروبا / أمريكا / آسيا)</option>
+              <option value="KSA">السعودية</option>
+              <option value="EGP">مصر</option>
+              <option value="UAE">الإمارات</option>
+              <option value="QAT">قطر</option>
+              <option value="KW">الكويت</option>
+              <option value="GCC">باقي دول الخليج</option>
+              <option value="MAGHREB">المغرب العربي</option>
+              <option value="LEVANT">بلاد الشام (الأردن / سوريا / لبنان)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">نوع الإدراج</label>
+            <select id="new-type" required class="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg py-2 px-3 text-xs focus:ring-2 focus:ring-brand-500">
+              <option value="offer">عرض (Supply / Offering)</option>
+              <option value="demand">طلب (Demand / Seeking)</option>
+              <option value="seeking_partner">طلب شريك (Co-founder)</option>
+              <option value="seeking_funds">طلب تمويل (Funding)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">المبلغ / رأس المال / التكلفة</label>
+            <input type="number" id="new-amount" placeholder="0" class="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg py-2 px-3 text-xs focus:ring-2 focus:ring-brand-500">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">الوصف الشامل والتفاصيل *</label>
+          <textarea id="new-description" required rows="3" placeholder="اشرح تفاصيل طلبك، نطاق العمل، شروط الشراكة، أو المنهجية القرآنية..." class="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg p-3 text-xs focus:ring-2 focus:ring-brand-500 resize-none"></textarea>
+        </div>
+
+        <!-- Dynamic Quran Fields -->
+        <div id="quran-form-fields" class="hidden space-y-3 p-3 bg-emerald-500/10 rounded-xl border border-emerald-500/20">
+          <h4 class="text-xs font-bold text-emerald-700 dark:text-emerald-400">تفاصيل المقرأة / طلب تحفيظ القرآن الكريم</h4>
+          <p class="text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed">الإجازة <b>اختيارية</b> ولا تمنعك من النشر. إن لم تكن مجازاً فضع رابط تلاوة قصيرة لك (صوتي أو يوتيوب) في خانة الرابط أسفل الوصف، وبعد أن تستمع إليها الإدارة تظهر بطاقتك بشارة «قارئ مُراجَع».</p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div>
+              <label class="block text-[11px] font-semibold mb-1">الرواية / القراءة</label>
+              <input type="text" id="new-riwaya" placeholder="مثال: حفص عن عاصم / ورش" class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-md py-1.5 px-2.5 text-xs">
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold mb-1">اسم الشيخ / المقرئ أو المدرسة</label>
+              <input type="text" id="new-sheikh" placeholder="مثال: د. أحمد المصراوي" class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-md py-1.5 px-2.5 text-xs">
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold mb-1">الفئة المستهدفة</label>
+              <select id="new-gender" class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-md py-1.5 px-2.5 text-xs">
+                <option value="أطفال">أطفال وكتاتيب ناشئة</option>
+                <option value="رجال">رجال</option>
+                <option value="نساء">نساء معلمات</option>
+                <option value="الجميع">الجميع</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div id="deal-form-fields" class="hidden space-y-2 p-3 bg-orange-500/10 rounded-xl border border-orange-500/20">
+          <h4 id="deal-title" class="text-xs font-bold text-orange-700 dark:text-orange-400"></h4>
+          <label class="block text-[11px] font-semibold mb-1">آخر موعد لاستقبال العروض *</label>
+          <input type="datetime-local" id="new-ends" class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-md py-1.5 px-2.5 text-xs">
+          <p id="deal-hint" class="text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed"></p>
+        </div>
+
+        <div id="languages-form-fields" class="hidden space-y-3 p-3 bg-teal-500/10 rounded-xl border border-teal-500/20">
+          <h4 class="text-xs font-bold text-teal-700 dark:text-teal-400">تفاصيل الدرس / الدورة اللغوية (اختر «عرض» إن كنت معلماً و«طلب» إن كنت متعلماً)</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div>
+              <label class="block text-[11px] font-semibold mb-1">اللغة / المسار</label>
+              <select id="new-lang-track" class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-md py-1.5 px-2.5 text-xs">
+                <option value="العربية للناطقين بغيرها">العربية للناطقين بغيرها</option>
+                <option value="العربية الفصحى وعلوم اللغة">العربية الفصحى وعلوم اللغة</option>
+                <option value="عربية القرآن والتجويد اللغوي">عربية القرآن والتجويد اللغوي</option>
+                <option value="تبادل لغوي">تبادل لغوي (Language Exchange)</option>
+                <option value="الإنجليزية">الإنجليزية</option>
+                <option value="لغة أخرى">لغة أخرى</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold mb-1">المستوى</label>
+              <select id="new-lang-level" class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-md py-1.5 px-2.5 text-xs">
+                <option value="مبتدئ">مبتدئ</option>
+                <option value="متوسط">متوسط</option>
+                <option value="متقدم">متقدم</option>
+                <option value="كل المستويات">كل المستويات</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold mb-1">اسم المعلم / المشرف</label>
+              <input type="text" id="new-lang-teacher" maxlength="80" placeholder="اختياري" class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-md py-1.5 px-2.5 text-xs">
+            </div>
+          </div>
+          <p class="text-[11px] text-slate-500">خانة الرابط أسفل الوصف علنية: ضع فيها فيديو تعريفياً أو عيّنة درس فقط. أما رابط الحصة أو المجموعة الخاصة فأرسله للمتعلم بعد التواصل.</p>
+        </div>
+
+        <details id="fee-waiver-box" class="hidden rounded-xl border border-slate-200 dark:border-slate-800 p-3 text-xs">
+          <summary class="cursor-pointer font-semibold text-slate-600 dark:text-slate-300">حصة المنصة (1.5%) — هل ظروفك المادية صعبة؟</summary>
+          <div class="mt-2 space-y-2">
+            <label class="flex items-start gap-2"><input type="radio" name="fee-choice" value="pay" checked class="mt-0.5"><span>سأدفع حصة المنصة عند إتمام الصفقة</span></label>
+            <label class="flex items-start gap-2"><input type="radio" name="fee-choice" value="waive" class="mt-0.5"><span>ظروفي المادية لا تسمح حالياً، وأطلب الإعفاء من الحصة</span></label>
+            <p class="text-[11px] text-slate-500 leading-relaxed">لا يظهر اختيارك في إعلانك ولا يراه أحد غير الإدارة، ولا يُطلب منك إثبات. الإعفاء بتقدير الإدارة.</p>
+          </div>
+        </details>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">رقم الواتساب مع المفتاح الدولي *</label>
+            <input type="text" id="new-phone" required placeholder="مثال: 966500000000+" class="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg py-2 px-3 text-xs focus:ring-2 focus:ring-brand-500">
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">رقم التوثيق / الترخيص / الجدوى (إن وجد)</label>
+            <input type="text" id="new-license" placeholder="مثال: FEASIBILITY-2026 / SANAD-09" class="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg py-2 px-3 text-xs focus:ring-2 focus:ring-brand-500">
+          </div>
+        </div>
+
+        <!-- طلب توثيق اختياري -->
+        <details class="rounded-xl border border-blue-200 dark:border-blue-900 p-3 text-xs bg-blue-50/50 dark:bg-blue-950/30">
+          <summary class="cursor-pointer font-semibold text-blue-800 dark:text-blue-300">طلب توثيق من الإدارة (اختياري)</summary>
+          <div class="mt-2 space-y-2">
+            <p class="text-[11px] text-slate-500">الشارة لا تُمنح تلقائياً. أرفق رابط مستند (Drive/PDF) أو اكتب بيان الإجازة — تراجعه الإدارة.</p>
+            <select id="new-verify-type" class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg py-2 px-2 text-xs">
+              <option value="">بدون طلب توثيق الآن</option>
+              <option value="sanad">إجازة / سند قرآن</option>
+              <option value="verified">ترخيص / سجل تجاري</option>
+              <option value="feasibility">دراسة جدوى موثقة</option>
+              <option value="reviewed">مراجعة عامة (استماع/تحقق)</option>
+            </select>
+            <input type="url" id="new-verify-link" placeholder="رابط المستند (Google Drive / PDF عام)" class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg py-2 px-2 text-xs">
+            <textarea id="new-verify-note" rows="2" maxlength="400" placeholder="ملاحظة للإدارة (رقم الإجازة، الجهة المانحة…)" class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg p-2 text-xs resize-none"></textarea>
+          </div>
+        </details>
+
+        <div class="pt-3 flex justify-end gap-2">
+          <button type="button" onclick="closeCreateModal()" class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-xs font-semibold">إلغاء</button>
+          <button type="submit" class="px-5 py-2 bg-brand-600 hover:bg-brand-700 text-white rounded-lg text-xs font-bold shadow transition">نشر فوراً بالرادار</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript Logic Section -->
+  <script>
+    // ==========================================
+    // 1. SITE + SUPABASE CONFIG (عدّل هنا فقط عند تغيير الدومين)
+    // ==========================================
+    const SITE = {
+      name: 'وِفَاق | Wefaq',
+      url: 'https://wefaq-khair.org',
+      domain: 'wefaq-khair.org'
+    };
+    const SUPABASE_URL = "https://gwrwgsaaialwgpkaqwwi.supabase.co";
+    const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd3cndnc2FhaWFsd2dwa2Fxd3dpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODkxNTIwMTAsImV4cCI6MjEwNDcyODAxMH0.8UsTQ1XS4HS6LrJDVQutqUks8U3qlH1R4GTnX955AB0";
+    
+    let supabaseClient = null;
+    if (typeof supabase !== 'undefined' && SUPABASE_URL && SUPABASE_ANON_KEY) {
+      supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    }
+
+    // ==========================================
+    // REALTIME + AI ENGINE (Wefaq Smart Sync)
+    // ==========================================
+    let realtimeChannel = null;
+    let aiProcessingQueue = [];
+
+    /**
+     * محاكاة محرك الذكاء الاصطناعي لتحليل وتصنيف الإعلان الجديد
+     * يستخرج: الفئة، مستوى التوثيق، الكلمات المفتاحية، وتقييم الجودة
+     */
+    async function processNewListingWithAI(rawData) {
+      console.log("🧠 الذكاء الاصطناعي يقوم بتحليل وتصنيف البيانات...", rawData.title || rawData);
+
+      // محاكاة تأخير المعالجة (في الإنتاج يمكن استبدالها بـ OpenAI / Claude / نموذج محلي)
+      await new Promise(r => setTimeout(r, 400));
+
+      const title = (rawData.title || '').toLowerCase();
+      const desc = (rawData.description || rawData.summary || '').toLowerCase();
+      const text = title + ' ' + desc;
+
+      // تصنيف ذكي تلقائي
+      let category = rawData.category || 'funding';
+      let badge = rawData.badge || rawData.documentation_level || 'verified';
+      let aiTags = [];
+      let aiScore = 70; // درجة ثقة AI من 0-100
+
+      if (['languages', 'services', 'tenders', 'auctions'].includes(rawData.category)) {
+        category = rawData.category;
+        badge = 'verified';
+        aiTags.push('تصنيف محدد من صاحب الإعلان');
+        aiScore = 90;
+      } else if (text.includes('قرآن') || text.includes('تحفيظ') || text.includes('سند') || text.includes('مقرئ') || text.includes('إجازة')) {
+        category = 'quran';
+        badge = 'sanad';
+        aiTags.push('قرآني', 'سند متصل');
+        aiScore = 92;
+      } else if (text.includes('تمويل') || text.includes('شريك') || text.includes('استثمار') || text.includes('رأس مال')) {
+        category = 'funding';
+        badge = 'feasibility';
+        aiTags.push('تمويل', 'شراكة');
+        aiScore = 85;
+      } else if (text.includes('دراسة جدوى') || text.includes('فكرة') || text.includes('نموذج عمل')) {
+        category = 'ideas';
+        badge = 'feasibility';
+        aiTags.push('دراسة جدوى');
+        aiScore = 88;
+      } else if (text.includes('مشروع') || text.includes('بيع') || text.includes('شركة قائمة')) {
+        category = 'projects';
+        badge = 'verified';
+        aiTags.push('مشروع قائم');
+        aiScore = 80;
+      } else if (text.includes('طلب') || text.includes('توريد') || text.includes('شراء')) {
+        category = 'demands';
+        badge = 'verified';
+        aiTags.push('طلب خدمة');
+        aiScore = 78;
+      }
+
+      // استخراج مبلغ تقريبي إن وجد
+      let amount = rawData.amount || rawData.funding_goal || 0;
+      if (!amount && text.match(/\d+/)) {
+        const nums = text.match(/\d{4,}/g);
+        if (nums) amount = parseInt(nums[0]);
+      }
+
+      const processed = {
+        id: String(rawData.id || Date.now()),
+        title: rawData.title || 'إعلان جديد تمت معالجته بالذكاء الاصطناعي',
+        category: category,
+        region: (function() {
+          if (rawData.region || rawData.country) return rawData.region || rawData.country;
+          if (text.includes('غزة') || text.includes('gaza')) return 'GAZA';
+          if (text.includes('فلسطين') || text.includes('رام الله') || text.includes('الخليل') || text.includes('نابلس') || text.includes('palestine')) return 'PALESTINE';
+          if (text.includes('أفريقيا') || text.includes('السنغال') || text.includes('نيجيريا') || text.includes('مالي') || text.includes('صومال') || text.includes('كينيا') || text.includes('africa')) return 'AFRICA';
+          if (text.includes('ألمانيا') || text.includes('كندا') || text.includes('أمريكا') || text.includes('فرنسا') || text.includes('بريطانيا') || text.includes('إندونيسيا') || text.includes('ماليزيا') || text.includes('أوروبا')) return 'FOREIGN';
+          if (text.includes('سعود') || text.includes('الرياض') || text.includes('جدة')) return 'KSA';
+          if (text.includes('مصر') || text.includes('قاهرة')) return 'EGP';
+          if (text.includes('إمارات') || text.includes('دبي')) return 'UAE';
+          return 'GLOBAL';
+        })(),
+        type: rawData.type || (category === 'funding' ? 'seeking_funds' : 'offer'),
+        amount: amount,
+        currency: rawData.currency || 'SAR',
+        description: rawData.description || rawData.summary || 'تمت المعالجة والتحقق بواسطة محرك الذكاء الاصطناعي لوفاق',
+        riwaya: rawData.riwaya || '',
+        sheikh: rawData.sheikh || '',
+        gender: rawData.gender || 'الجميع',
+        mode: rawData.mode || '',
+        license: rawData.license || rawData.documentation_level || '',
+        phone: rawData.phone || '966500000000',
+        badge: badge,
+        createdAt: rawData.created_at ? String(rawData.created_at).split('T')[0] : new Date().toISOString().split('T')[0],
+        // حقول الذكاء الاصطناعي الإضافية
+        ai_processed: true,
+        ai_score: aiScore,
+        ai_tags: aiTags,
+        ai_status: 'verified_by_ai'
+      };
+
+      console.log("✅ نتيجة تحليل AI:", { category, badge, aiScore, aiTags });
+      return processed;
+    }
+
+    /**
+     * إضافة بطاقة جديدة للواجهة فوراً (بدون إعادة رسم كاملة)
+     */
+    function addNewCardToUI(item) {
+      // تجنب التكرار
+      if (opportunitiesData.some(o => o.id === item.id)) {
+        console.log("البطاقة موجودة مسبقاً، تم تجاهل التكرار:", item.id);
+        return;
+      }
+
+      opportunitiesData.unshift(item);
+
+      // إذا كان الفلتر الحالي يسمح بعرض هذه البطاقة → أضفها في أعلى الشبكة
+      const container = document.getElementById('cards-container');
+      const emptyState = document.getElementById('empty-state');
+      if (emptyState) emptyState.classList.add('hidden');
+
+      const currentCurrency = document.getElementById('currency-select')?.value || 'SAR';
+      const cardHTML = createCardHTML(item, currentCurrency);
+
+      // إضافة تأثير ظهور لطيف
+      const temp = document.createElement('div');
+      temp.innerHTML = cardHTML;
+      const cardEl = temp.firstElementChild;
+      if (cardEl) {
+        cardEl.classList.add('animate-pulse');
+        cardEl.style.animationDuration = '1.2s';
+        // شارة AI
+        if (item.ai_processed) {
+          const badge = document.createElement('span');
+          badge.className = 'absolute top-2 left-2 bg-purple-500/90 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow';
+          badge.innerHTML = '<i class="fa-solid fa-robot"></i> AI';
+          cardEl.style.position = 'relative';
+          cardEl.appendChild(badge);
+        }
+        container.prepend(cardEl);
+        setTimeout(() => cardEl.classList.remove('animate-pulse'), 1300);
+      }
+
+      // تحديث عداد النتائج
+      const badge = document.getElementById('results-count-badge');
+      if (badge) {
+        const current = parseInt(badge.innerText) || 0;
+        badge.innerText = `${current + 1} نتائج`;
+      }
+
+      updateMetricCounters();
+      showRealtimeNotification(`تم إضافة "${item.title.substring(0, 40)}..." لحظياً عبر الذكاء الاصطناعي`);
+    }
+
+    /**
+     * إشعار لطيف عند وصول بيانات جديدة
+     */
+    function showRealtimeNotification(msg) {
+      // إزالة أي إشعار سابق
+      const old = document.getElementById('wefaq-toast');
+      if (old) old.remove();
+
+      const toast = document.createElement('div');
+      toast.id = 'wefaq-toast';
+      toast.className = 'fixed bottom-6 left-6 z-[100] bg-emerald-600 text-white text-xs font-bold px-4 py-3 rounded-xl shadow-2xl flex items-center gap-2 max-w-sm animate-bounce';
+      toast.innerHTML = `<i class="fa-solid fa-bolt"></i> <span>${msg}</span>`;
+      document.body.appendChild(toast);
+
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transition = 'opacity 0.4s';
+        setTimeout(() => toast.remove(), 400);
+      }, 4500);
+    }
+
+    /**
+     * تفعيل الاستماع اللحظي (Realtime) على جدول opportunities
+     */
+    /**
+     * معالج موحّد لأي إدراج جديد من أي جدول
+     */
+    async function handleRealtimeInsert(payload, sourceTable) {
+      console.log(`📡 بيانات جديدة من جدول [${sourceTable}]:`, payload.new);
+      try {
+        const processed = await processNewListingWithAI({
+          ...payload.new,
+          // توحيد الحقول بين الجداول المختلفة
+          amount: payload.new.amount ?? payload.new.funding_goal ?? 0,
+          region: payload.new.region ?? payload.new.country ?? 'GLOBAL',
+          badge: payload.new.badge ?? payload.new.documentation_level ?? payload.new.status ?? 'verified',
+          description: payload.new.description ?? payload.new.summary ?? ''
+        });
+        processed._source_table = sourceTable;
+        addNewCardToUI(processed);
+      } catch (err) {
+        console.error('خطأ في معالجة AI للبيانات اللحظية:', err);
+      }
+    }
+
+    function startRealtimeSync() {
+      if (!supabaseClient) {
+        console.warn("Supabase غير متاح - Realtime معطل (وضع محلي فقط)");
+        return;
+      }
+
+      // إلغاء الاشتراك السابق إن وجد
+      if (realtimeChannel) {
+        supabaseClient.removeChannel(realtimeChannel);
+      }
+
+      // قناة واحدة تستمع لجدولين: opportunities + wefaq_listings
+      realtimeChannel = supabaseClient
+        .channel('public:wefaq_dual_tables')
+        // ===== جدول opportunities (القديم) =====
+        .on(
+          'postgres_changes',
+          { event: 'INSERT', schema: 'public', table: 'opportunities' },
+          (payload) => handleRealtimeInsert(payload, 'opportunities')
+        )
+        .on(
+          'postgres_changes',
+          { event: 'UPDATE', schema: 'public', table: 'opportunities' },
+          (payload) => console.log('🔄 تحديث opportunities:', payload.new)
+        )
+        // ===== جدول wefaq_listings (الجديد المنفصل) =====
+        .on(
+          'postgres_changes',
+          { event: 'INSERT', schema: 'public', table: 'wefaq_listings' },
+          (payload) => handleRealtimeInsert(payload, 'wefaq_listings')
+        )
+        .on(
+          'postgres_changes',
+          { event: 'UPDATE', schema: 'public', table: 'wefaq_listings' },
+          (payload) => console.log('🔄 تحديث wefaq_listings:', payload.new)
+        )
+        .subscribe((status) => {
+          console.log('حالة قناة Realtime (opportunities + wefaq_listings):', status);
+          if (status === 'SUBSCRIBED') {
+            showRealtimeNotification('تم تفعيل المزامنة اللحظية على الجدولين ✓');
+          }
+        });
+    }
+
+    // Currency Rates Base: SAR
+    const EXCHANGE_RATES = {
+      SAR: 1,
+      USD: 0.27,
+      EGP: 13.1,
+      AED: 0.98,
+      EUR: 0.24
+    };
+
+    // Global App State
+    let currentCategoryFilter = 'all';
+    let currentSelectedCardForContact = null;
+    let currentSelectedCardForShare = null;
+
+    // Comprehensive Initial Mock Data (Merged for opportunities & requests)
+    let opportunitiesData = [];
+    let focusListingId = new URLSearchParams(location.search).get('l')
+      || new URLSearchParams(location.search).get('listing');
+    let currentShareUrl = '';
+    function baseUrl() {
+      try {
+        if (location.hostname === SITE.domain || location.hostname === 'www.' + SITE.domain)
+          return SITE.url + '/';
+      } catch (_) {}
+      return location.origin + location.pathname;
+    }
+    // رابط المشاركة يشير إلى صفحة ثابتة l/<id>/ تولّدها GitHub Action لتظهر معاينة الإعلان في واتساب وغيره؛
+    // وإن لم تُولَّد بعد يحوّله 404.html تلقائياً إلى الصفحة الرئيسية.
+    function listingUrl(id) {
+      const path = 'l/' + encodeURIComponent(id) + '/';
+      try {
+        if (location.hostname === SITE.domain || location.hostname === 'www.' + SITE.domain)
+          return SITE.url + '/' + path;
+      } catch (_) {}
+      return location.origin + location.pathname.replace(/[^/]*$/, '') + path;
+    }
+    function clearFocus() {
+      focusListingId = null;
+      history.replaceState(null, '', baseUrl());
+      document.title = 'منصة وِفَاق العالمية | Wefaq Regional & Global Matching Hub';
+      renderCards();
+    }
+
+    // ==========================================
+    // VISITOR COUNTER ENGINE (Realtime + Country)
+    // ==========================================
+    const VISITOR_STORAGE_KEY = 'wefaq_visitor_stats_v2';
+    const SESSION_KEY = 'wefaq_session_id';
+    const COUNTRY_CACHE_KEY = 'wefaq_visitor_country';
+
+    let presenceChannel = null;
+    let myCountryCode = 'XX';
+    let myCountryName = 'غير محدد';
+    let onlineCount = 1;
+
+    // خريطة رموز الدول → أسماء عربية + أعلام تقريبية
+    const COUNTRY_AR = {
+      SA: 'السعودية', EG: 'مصر', AE: 'الإمارات', QA: 'قطر', KW: 'الكويت',
+      BH: 'البحرين', OM: 'عُمان', JO: 'الأردن', LB: 'لبنان', SY: 'سوريا',
+      IQ: 'العراق', YE: 'اليمن', PS: 'فلسطين', MA: 'المغرب', DZ: 'الجزائر',
+      TN: 'تونس', LY: 'ليبيا', SD: 'السودان', MR: 'موريتانيا',
+      US: 'أمريكا', GB: 'بريطانيا', FR: 'فرنسا', DE: 'ألمانيا', TR: 'تركيا',
+      PK: 'باكستان', IN: 'الهند', ID: 'إندونيسيا', MY: 'ماليزيا',
+      CN: 'الصين', RU: 'روسيا', CA: 'كندا', AU: 'أستراليا', XX: 'غير محدد'
+    };
+
+    function getOrCreateSessionId() {
+      let sid = sessionStorage.getItem(SESSION_KEY);
+      if (!sid) {
+        sid = 's_' + Date.now() + '_' + Math.random().toString(36).slice(2, 9);
+        sessionStorage.setItem(SESSION_KEY, sid);
+      }
+      return sid;
+    }
+
+    function loadLocalVisitorStats() {
+      try {
+        return JSON.parse(localStorage.getItem(VISITOR_STORAGE_KEY)) || {
+          total: 0, today: 0, todayDate: '', sessions: {}, byCountry: {}
+        };
+      } catch {
+        return { total: 0, today: 0, todayDate: '', sessions: {}, byCountry: {} };
+      }
+    }
+
+    function saveLocalVisitorStats(stats) {
+      localStorage.setItem(VISITOR_STORAGE_KEY, JSON.stringify(stats));
+    }
+
+    function updateVisitorUI(total, today, sessionCount, online) {
+      const elTotal = document.getElementById('stat-visitors-total');
+      const elToday = document.getElementById('stat-visitors-today');
+      const elSession = document.getElementById('stat-visitors-session');
+      const elOnline = document.getElementById('stat-online-num');
+      const elMyCountry = document.getElementById('stat-my-country');
+      if (elTotal) elTotal.innerText = Number(total || 0).toLocaleString('ar-EG');
+      if (elToday) elToday.innerText = `اليوم: ${Number(today || 0).toLocaleString('ar-EG')}`;
+      if (elSession) elSession.innerText = `الجلسة: ${Number(sessionCount || 1).toLocaleString('ar-EG')}`;
+      if (elOnline && online !== undefined) elOnline.innerText = Number(online).toLocaleString('ar-EG');
+      if (elMyCountry) elMyCountry.innerText = myCountryName !== 'غير محدد' ? `📍 ${myCountryName}` : '📍 —';
+    }
+
+    function renderCountryBreakdown(byCountry) {
+      const box = document.getElementById('visitors-by-country');
+      if (!box) return;
+      const entries = Object.entries(byCountry || {})
+        .filter(([, n]) => n > 0)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 8);
+
+      if (entries.length === 0) {
+        box.innerHTML = '<div class="text-[10px] text-slate-500 text-center py-1">لا بيانات بلدان بعد</div>';
+        return;
+      }
+
+      const max = entries[0][1] || 1;
+      box.innerHTML = entries.map(([code, count]) => {
+        const name = COUNTRY_AR[code] || code;
+        const pct = Math.max(8, Math.round((count / max) * 100));
+        return `
+          <div class="flex items-center gap-2 text-[10px]">
+            <span class="w-16 truncate text-slate-300 font-semibold" title="${name}">${name}</span>
+            <div class="flex-1 h-1.5 bg-white/10 rounded-full overflow-hidden">
+              <div class="h-full bg-cyan-400/70 rounded-full" style="width:${pct}%"></div>
+            </div>
+            <span class="w-7 text-left text-cyan-300 font-bold">${count}</span>
+          </div>`;
+      }).join('');
+    }
+
+    /**
+     * اكتشاف دولة الزائر عبر خدمة مجانية (ipapi.co)
+     * مع تخزين مؤقت في localStorage لتفادي الطلبات المتكررة
+     */
+    async function detectVisitorCountry() {
+      const cached = localStorage.getItem(COUNTRY_CACHE_KEY);
+      if (cached) {
+        try {
+          const c = JSON.parse(cached);
+          if (c.code && c.ts && Date.now() - c.ts < 7 * 24 * 60 * 60 * 1000) {
+            myCountryCode = c.code;
+            myCountryName = COUNTRY_AR[c.code] || c.name || c.code;
+            return { code: myCountryCode, name: myCountryName };
+          }
+        } catch (_) {}
+      }
+
+      try {
+        const res = await fetch('https://ipapi.co/json/', { signal: AbortSignal.timeout(4000) });
+        if (res.ok) {
+          const data = await res.json();
+          myCountryCode = (data.country_code || 'XX').toUpperCase();
+          myCountryName = COUNTRY_AR[myCountryCode] || data.country_name || myCountryCode;
+          localStorage.setItem(COUNTRY_CACHE_KEY, JSON.stringify({
+            code: myCountryCode, name: myCountryName, ts: Date.now()
+          }));
+          return { code: myCountryCode, name: myCountryName };
+        }
+      } catch (e) {
+        console.log('تعذر تحديد الدولة، استخدام التقريب من المنطقة الزمنية');
+      }
+
+      // احتياطي: تقريب من المنطقة الزمنية
+      try {
+        const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+        if (tz.includes('Riyadh') || tz.includes('Saudi')) { myCountryCode = 'SA'; myCountryName = 'السعودية'; }
+        else if (tz.includes('Cairo')) { myCountryCode = 'EG'; myCountryName = 'مصر'; }
+        else if (tz.includes('Dubai')) { myCountryCode = 'AE'; myCountryName = 'الإمارات'; }
+        else if (tz.includes('Qatar')) { myCountryCode = 'QA'; myCountryName = 'قطر'; }
+        else if (tz.includes('Kuwait')) { myCountryCode = 'KW'; myCountryName = 'الكويت'; }
+        else { myCountryCode = 'XX'; myCountryName = 'غير محدد'; }
+      } catch (_) {
+        myCountryCode = 'XX';
+        myCountryName = 'غير محدد';
+      }
+      return { code: myCountryCode, name: myCountryName };
+    }
+
+    /**
+     * تفعيل حضور لحظي (Presence) عبر قناة Supabase Realtime
+     * يعرض عدد المتصلين الآن + دولهم
+     */
+    function startVisitorPresence() {
+      if (!supabaseClient) {
+        document.getElementById('stat-online-num').innerText = '1';
+        return;
+      }
+
+      if (presenceChannel) {
+        supabaseClient.removeChannel(presenceChannel);
+      }
+
+      const sessionId = getOrCreateSessionId();
+
+      presenceChannel = supabaseClient.channel('wefaq_live_visitors', {
+        config: { presence: { key: sessionId } }
+      });
+
+      presenceChannel
+        .on('presence', { event: 'sync' }, () => {
+          const state = presenceChannel.presenceState();
+          const users = Object.values(state).flat();
+          onlineCount = users.length || 1;
+          document.getElementById('stat-online-num').innerText = onlineCount.toLocaleString('ar-EG');
+
+          // تجميع المتصلين حسب البلد
+          const liveByCountry = {};
+          users.forEach(u => {
+            const c = (u.country || 'XX').toUpperCase();
+            liveByCountry[c] = (liveByCountry[c] || 0) + 1;
+          });
+          // دمج مع الإجمالي المحلي للعرض
+          const stats = loadLocalVisitorStats();
+          const merged = { ...stats.byCountry };
+          // لا نستبدل الإجمالي، فقط نحدّث إن أردنا — نعرض الإجمالي من byCountry
+          renderCountryBreakdown(Object.keys(merged).length ? merged : liveByCountry);
+        })
+        .on('presence', { event: 'join' }, ({ newPresences }) => {
+          onlineCount = Math.max(onlineCount, Object.values(presenceChannel.presenceState()).flat().length);
+          document.getElementById('stat-online-num').innerText = onlineCount.toLocaleString('ar-EG');
+        })
+        .on('presence', { event: 'leave' }, () => {
+          const n = Object.values(presenceChannel.presenceState()).flat().length || 1;
+          onlineCount = n;
+          document.getElementById('stat-online-num').innerText = onlineCount.toLocaleString('ar-EG');
+        })
+        // الاستماع لتحديثات site_stats لحظياً (الإجمالي)
+        .on('postgres_changes', { event: '*', schema: 'public', table: 'site_stats' }, (payload) => {
+          const row = payload.new;
+          if (row && row.id === 'global') {
+            const todayStr = new Date().toISOString().split('T')[0];
+            const cloudToday = row.today_date === todayStr ? (row.today_visits || 0) : 0;
+            const stats = loadLocalVisitorStats();
+            const sessionHits = stats.sessions[getOrCreateSessionId()]?.hits || 1;
+            updateVisitorUI(
+              Math.max(stats.total, row.total_visits || 0),
+              Math.max(stats.today, cloudToday),
+              sessionHits,
+              onlineCount
+            );
+            if (row.by_country) {
+              try {
+                const bc = typeof row.by_country === 'string' ? JSON.parse(row.by_country) : row.by_country;
+                renderCountryBreakdown(bc);
+              } catch (_) {}
+            }
+          }
+        })
+        .subscribe(async (status) => {
+          if (status === 'SUBSCRIBED') {
+            await presenceChannel.track({
+              online_at: new Date().toISOString(),
+              country: myCountryCode,
+              country_name: myCountryName,
+              session: sessionId
+            });
+          }
+        });
+    }
+
+    /**
+     * تسجيل زيارة + تحديث الإجمالي والبلد + مزامنة سحابية
+     */
+    async function trackVisitor() {
+      const todayStr = new Date().toISOString().split('T')[0];
+      const sessionId = getOrCreateSessionId();
+
+      // اكتشاف الدولة أولاً
+      await detectVisitorCountry();
+
+      let stats = loadLocalVisitorStats();
+      if (stats.todayDate !== todayStr) {
+        stats.today = 0;
+        stats.todayDate = todayStr;
+      }
+      if (!stats.byCountry) stats.byCountry = {};
+
+      const isNewSession = !stats.sessions[sessionId];
+      if (isNewSession) {
+        stats.total += 1;
+        stats.today += 1;
+        stats.byCountry[myCountryCode] = (stats.byCountry[myCountryCode] || 0) + 1;
+        stats.sessions[sessionId] = {
+          firstSeen: new Date().toISOString(),
+          hits: 1,
+          country: myCountryCode
+        };
+        // تنظيف جلسات أقدم من 7 أيام
+        const weekAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
+        Object.keys(stats.sessions).forEach(k => {
+          if (new Date(stats.sessions[k].firstSeen).getTime() < weekAgo) delete stats.sessions[k];
+        });
+        saveLocalVisitorStats(stats);
+      } else {
+        stats.sessions[sessionId].hits = (stats.sessions[sessionId].hits || 1) + 1;
+        saveLocalVisitorStats(stats);
+      }
+
+      const sessionHits = stats.sessions[sessionId]?.hits || 1;
+      updateVisitorUI(stats.total, stats.today, sessionHits, onlineCount);
+      renderCountryBreakdown(stats.byCountry);
+
+      // مزامنة سحابية
+      if (supabaseClient) {
+        try {
+          if (isNewSession) {
+            const { data: existing } = await supabaseClient
+              .from('site_stats')
+              .select('*')
+              .eq('id', 'global')
+              .maybeSingle();
+
+            let byCountry = {};
+            if (existing?.by_country) {
+              byCountry = typeof existing.by_country === 'string'
+                ? JSON.parse(existing.by_country)
+                : (existing.by_country || {});
+            }
+            byCountry[myCountryCode] = (byCountry[myCountryCode] || 0) + 1;
+
+            if (existing) {
+              const sameDay = existing.today_date === todayStr;
+              await supabaseClient.from('site_stats').update({
+                total_visits: (existing.total_visits || 0) + 1,
+                today_visits: sameDay ? (existing.today_visits || 0) + 1 : 1,
+                today_date: todayStr,
+                by_country: byCountry,
+                updated_at: new Date().toISOString()
+              }).eq('id', 'global');
+
+              updateVisitorUI(
+                (existing.total_visits || 0) + 1,
+                sameDay ? (existing.today_visits || 0) + 1 : 1,
+                sessionHits,
+                onlineCount
+              );
+              renderCountryBreakdown(byCountry);
+            } else {
+              await supabaseClient.from('site_stats').insert([{
+                id: 'global',
+                total_visits: stats.total,
+                today_visits: stats.today,
+                today_date: todayStr,
+                by_country: stats.byCountry,
+                updated_at: new Date().toISOString()
+              }]);
+            }
+          } else {
+            // جلب الأرقام السحابية فقط
+            const { data: cloud } = await supabaseClient
+              .from('site_stats')
+              .select('total_visits, today_visits, today_date, by_country')
+              .eq('id', 'global')
+              .maybeSingle();
+            if (cloud) {
+              const cloudToday = cloud.today_date === todayStr ? (cloud.today_visits || 0) : 0;
+              updateVisitorUI(
+                Math.max(stats.total, cloud.total_visits || 0),
+                Math.max(stats.today, cloudToday),
+                sessionHits,
+                onlineCount
+              );
+              if (cloud.by_country) {
+                const bc = typeof cloud.by_country === 'string' ? JSON.parse(cloud.by_country) : cloud.by_country;
+                renderCountryBreakdown(bc);
+              }
+            }
+          }
+        } catch (err) {
+          console.log('عداد الزوار: وضع محلي + Presence فقط', err?.message || err);
+        }
+      }
+
+      // تفعيل الحضور اللحظي
+      startVisitorPresence();
+    }
+
+    // Lifecycle Init
+    document.addEventListener("DOMContentLoaded", () => {
+      fetchOpportunitiesFromSupabase();
+      loadSavedRatings();
+      renderCards();
+      updateMetricCounters();
+      startRealtimeSync();
+      trackVisitor();
+      // استيراد مقارئ خارجي تلقائي خفيف + مطابقة ذكية
+      setTimeout(() => {
+        runSmartMatching();
+      }, 800);
+    });
+
+    // Dark Mode Toggle
+    function toggleTheme() {
+      const htmlEl = document.documentElement;
+      const themeIcon = document.getElementById('theme-icon');
+      if (htmlEl.classList.contains('dark')) {
+        htmlEl.classList.remove('dark');
+        themeIcon.className = 'fa-solid fa-moon';
+      } else {
+        htmlEl.classList.add('dark');
+        themeIcon.className = 'fa-solid fa-sun text-amber-400';
+      }
+    }
+
+    // ==========================================
+    // 2. ROI & FEASIBILITY CALCULATOR ENGINE
+    // ==========================================
+    // ==========================================
+    // 3. FILTERING & RADAR ENGINE
+    // ==========================================
+    function setCategoryFilter(category) {
+      currentCategoryFilter = category;
+      const tabs = ['all', 'quran', 'projects', 'demands', 'funding', 'ideas', 'languages', 'services', 'tenders', 'auctions'];
+      tabs.forEach(t => {
+        const btn = document.getElementById(`tab-${t}`);
+        if (btn) {
+          if (t === category) {
+            btn.className = 'px-3 py-1.5 rounded-lg bg-brand-600 text-white font-bold transition whitespace-nowrap shadow';
+          } else {
+            btn.className = 'px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 font-medium transition whitespace-nowrap';
+          }
+        }
+      });
+
+      const quranFilters = document.getElementById('quran-extra-filters');
+      if (category === 'quran') {
+        quranFilters.classList.remove('hidden');
+      } else {
+        quranFilters.classList.add('hidden');
+      }
+      const langFilters = document.getElementById('languages-extra-filters');
+      if (langFilters) langFilters.classList.toggle('hidden', category !== 'languages');
+
+      renderCards();
+    }
+
+    function resetFilters() {
+      document.getElementById('search-keyword').value = '';
+      document.getElementById('filter-region').value = 'all';
+      document.getElementById('filter-type').value = 'all';
+      document.getElementById('filter-badge').value = 'all';
+      document.getElementById('filter-riwaya').value = 'all';
+      document.getElementById('filter-gender').value = 'all';
+      document.getElementById('filter-mode').value = 'all';
+      document.getElementById('filter-lang-track').value = 'all';
+      document.getElementById('filter-lang-level').value = 'all';
+      setCategoryFilter('all');
+    }
+
+    // ==========================================
+    // 4. CARD RENDERER WITH SOCIAL SHARE BUTTONS
+    // ==========================================
+    function renderCards() {
+      const container = document.getElementById('cards-container');
+      const emptyState = document.getElementById('empty-state');
+      const searchKey = document.getElementById('search-keyword').value.toLowerCase().trim();
+      const regionVal = document.getElementById('filter-region').value;
+      const typeVal = document.getElementById('filter-type').value;
+      const badgeVal = document.getElementById('filter-badge').value;
+      const riwayaVal = document.getElementById('filter-riwaya').value;
+      const genderVal = document.getElementById('filter-gender').value;
+      const modeVal = document.getElementById('filter-mode').value;
+      const currentCurrency = document.getElementById('currency-select').value;
+
+      let filtered = opportunitiesData.filter(item => {
+        if (focusListingId) return item.id === String(focusListingId);
+        if (item.endsAt && Date.now() - new Date(item.endsAt).getTime() > 7 * 86400000) return false;
+        if (currentCategoryFilter !== 'all' && item.category !== currentCategoryFilter) return false;
+
+        if (searchKey) {
+          const title = (item.title || '').toLowerCase();
+          const desc = (item.description || '').toLowerCase();
+          const sheikh = (item.sheikh || '').toLowerCase();
+          const lic = (item.license || '').toLowerCase();
+          if (!title.includes(searchKey) && !desc.includes(searchKey) && !sheikh.includes(searchKey) && !lic.includes(searchKey)) {
+            return false;
+          }
+        }
+
+        if (regionVal !== 'all') {
+          // فلسطين تشمل غزة أيضاً عند الفلترة
+          if (regionVal === 'PALESTINE') {
+            if (item.region !== 'PALESTINE' && item.region !== 'GAZA') return false;
+          } else if (item.region !== regionVal) {
+            return false;
+          }
+        }
+        if (typeVal !== 'all' && item.type !== typeVal) return false;
+        if (badgeVal !== 'all' && item.badge !== badgeVal) return false;
+
+        if (currentCategoryFilter === 'quran') {
+          if (riwayaVal !== 'all' && item.riwaya !== riwayaVal) return false;
+          if (genderVal !== 'all' && item.gender !== genderVal) return false;
+          if (modeVal !== 'all' && item.mode !== modeVal) return false;
+        }
+        if (currentCategoryFilter === 'languages') {
+          const lt = document.getElementById('filter-lang-track').value;
+          const ll = document.getElementById('filter-lang-level').value;
+          if (lt !== 'all' && item.riwaya !== lt) return false;
+          if (ll !== 'all' && item.gender !== ll && item.gender !== 'كل المستويات') return false;
+        }
+
+        return true;
+      });
+
+      document.getElementById('results-count-badge').innerText = `${filtered.length} نتائج`;
+      let fb = document.getElementById('focus-banner');
+      if (!fb) { container.insertAdjacentHTML('beforebegin', '<div id="focus-banner" class="hidden mb-3 flex items-center justify-between gap-2 bg-brand-600/10 border border-brand-600/30 rounded-xl px-3 py-2 text-xs"><span class="font-bold">تعرض إعلاناً واحداً عبر رابط مشاركة</span><button onclick="clearFocus()" class="bg-brand-600 text-white rounded-lg px-3 py-1 font-bold">عرض كل الإعلانات</button></div>'); fb = document.getElementById('focus-banner'); }
+      fb.classList.toggle('hidden', !focusListingId);
+
+      if (filtered.length === 0) {
+        container.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+      container.innerHTML = filtered.map(item => createCardHTML(item, currentCurrency)).join('');
+    }
+
+    function createCardHTML(item, currency) {
+      const REGION_LABELS = {
+        GLOBAL: 'عالمي',
+        PALESTINE: 'فلسطين',
+        GAZA: 'غزة',
+        AFRICA: 'أفريقيا',
+        FOREIGN: 'دول أجنبية',
+        KSA: 'السعودية',
+        EGP: 'مصر',
+        UAE: 'الإمارات',
+        QAT: 'قطر',
+        KW: 'الكويت',
+        GCC: 'الخليج',
+        MAGHREB: 'المغرب العربي',
+        LEVANT: 'بلاد الشام'
+      };
+      const regionLabel = REGION_LABELS[item.region] || item.region || '—';
+      const convertedAmount = Math.round(item.amount * (EXCHANGE_RATES[currency] || 1));
+      const amountFormatted = convertedAmount > 0 ? `${convertedAmount.toLocaleString()} ${currency}` : 'حسب الاتفاق / مجاني';
+
+      // Category Icon & Styling
+      let categoryBadge = '';
+      let categoryIcon = 'fa-briefcase';
+      let categoryColor = 'text-blue-600 bg-blue-50 dark:bg-blue-950/50';
+
+      if (item.category === 'quran') {
+        categoryIcon = 'fa-book-quran';
+        categoryColor = 'text-emerald-600 bg-emerald-50 dark:bg-emerald-950/50';
+        categoryBadge = '📖 تحفيظ قرآن كريم';
+      } else if (item.category === 'projects') {
+        categoryIcon = 'fa-store';
+        categoryColor = 'text-blue-600 bg-blue-50 dark:bg-blue-950/50';
+        categoryBadge = '🏬 مشروع عارض';
+      } else if (item.category === 'demands') {
+        categoryIcon = 'fa-cart-shopping';
+        categoryColor = 'text-indigo-600 bg-indigo-50 dark:bg-indigo-950/50';
+        categoryBadge = '🛒 طالب خدمة';
+      } else if (item.category === 'funding') {
+        categoryIcon = 'fa-handshake';
+        categoryColor = 'text-amber-600 bg-amber-50 dark:bg-amber-950/50';
+        categoryBadge = '💰 طلب تمويل وشريك';
+      } else if (item.category === 'services') {
+        categoryIcon = 'fa-screwdriver-wrench';
+        categoryColor = 'text-cyan-600 bg-cyan-50 dark:bg-cyan-950/50';
+        categoryBadge = '🛠 عرض خدمة';
+      } else if (item.category === 'tenders') {
+        categoryIcon = 'fa-file-signature';
+        categoryColor = 'text-orange-600 bg-orange-50 dark:bg-orange-950/50';
+        categoryBadge = '📑 مناقصة';
+      } else if (item.category === 'auctions') {
+        categoryIcon = 'fa-gavel';
+        categoryColor = 'text-fuchsia-600 bg-fuchsia-50 dark:bg-fuchsia-950/50';
+        categoryBadge = '🔨 مزاد';
+      } else if (item.category === 'languages') {
+        categoryIcon = 'fa-language';
+        categoryColor = 'text-teal-600 bg-teal-50 dark:bg-teal-950/50';
+        categoryBadge = '🌍 تعليم لغات';
+      } else if (item.category === 'ideas') {
+        categoryIcon = 'fa-lightbulb';
+        categoryColor = 'text-purple-600 bg-purple-50 dark:bg-purple-950/50';
+        categoryBadge = '💡 فكرة / دراسة جدوى';
+      }
+
+      // Trust Badges
+      let trustBadgeHTML = '';
+      if (item.badge === 'sanad') {
+        trustBadgeHTML = `<span class="bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 text-[10px] font-bold px-2 py-0.5 rounded-full"><i class="fa-solid fa-certificate"></i> مجاز بالسند</span>`;
+      } else if (item.badge === 'feasibility') {
+        trustBadgeHTML = `<span class="bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/30 text-[10px] font-bold px-2 py-0.5 rounded-full"><i class="fa-solid fa-file-check"></i> دراسة جدوى جاهزة</span>`;
+      } else if (item.badge === 'reviewed') {
+        const rl = item.category === 'quran' ? 'قارئ مُراجَع' : (item.category === 'languages' ? 'معلم مُراجَع' : 'مُراجَع من الإدارة');
+        trustBadgeHTML = `<span class="bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/30 text-[10px] font-bold px-2 py-0.5 rounded-full"><i class="fa-solid fa-circle-check"></i> ${rl}</span>`;
+      } else if (item.badge === 'verified') {
+        trustBadgeHTML = `<span class="bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/30 text-[10px] font-bold px-2 py-0.5 rounded-full"><i class="fa-solid fa-shield-halved"></i> موثق رسمياً</span>`;
+      } else {
+        trustBadgeHTML = `<span class="bg-slate-500/10 text-slate-500 border border-slate-500/30 text-[10px] font-bold px-2 py-0.5 rounded-full">غير موثق — تحقق بنفسك</span>`;
+      }
+
+      // شارة الذكاء الاصطناعي إن وُجدت
+      let aiBadgeHTML = '';
+      if (item.ai_processed) {
+        aiBadgeHTML = `<span class="bg-purple-500/15 text-purple-600 dark:text-purple-400 border border-purple-500/30 text-[10px] font-bold px-2 py-0.5 rounded-full"><i class="fa-solid fa-robot"></i> AI ${item.ai_score || 80}%</span>`;
+      }
+      let sourceBadgeHTML = '';
+      if (item.source === 'facebook') {
+        sourceBadgeHTML = `<span class="bg-blue-500/15 text-blue-600 dark:text-blue-400 border border-blue-500/30 text-[10px] font-bold px-2 py-0.5 rounded-full"><i class="fa-brands fa-facebook"></i> فيسبوك</span>`;
+      } else if (item.source === 'freelancer') {
+        sourceBadgeHTML = `<span class="bg-green-500/15 text-green-600 dark:text-green-400 border border-green-500/30 text-[10px] font-bold px-2 py-0.5 rounded-full"><i class="fa-solid fa-laptop-code"></i> فريلانسر</span>`;
+      } else if (item.source === 'pasted_social') {
+        sourceBadgeHTML = `<span class="bg-slate-500/15 text-slate-600 dark:text-slate-300 border border-slate-500/30 text-[10px] font-bold px-2 py-0.5 rounded-full"><i class="fa-solid fa-paste"></i> منشور</span>`;
+      }
+
+      return `
+        <div class="glass-card rounded-xl p-5 flex flex-col justify-between hover:shadow-lg transition duration-300 border relative">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-lg ${categoryColor} flex items-center justify-center text-sm font-bold">
+                  <i class="fa-solid ${categoryIcon}"></i>
+                </div>
+                <div class="text-[11px] font-bold text-slate-500">${categoryBadge} • <span class="text-slate-800 dark:text-slate-200">${regionLabel}${item.city ? ' · ' + item.city : ''}</span></div>
+              </div>
+              <div class="flex items-center gap-1.5 flex-wrap justify-end">
+                ${sourceBadgeHTML}
+                ${aiBadgeHTML}
+                ${item.featured ? '<span class="bg-amber-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">⭐ مميز</span>' : ''}${trustBadgeHTML}
+              </div>
+            </div>
+
+            <h3 class="font-extrabold text-slate-900 dark:text-white text-sm sm:text-base mb-2 leading-snug line-clamp-2">
+              ${item.title}
+            </h3>
+
+            <p class="text-slate-600 dark:text-slate-300 text-xs line-clamp-3 mb-4 leading-relaxed">
+              ${item.description}
+            </p>
+
+            ${typeof dealBoxHTML === 'function' ? dealBoxHTML(item) : ''}
+
+            ${item.category === 'languages' ? `
+              <div class="bg-teal-500/5 p-2.5 rounded-lg border border-teal-500/10 text-[11px] space-y-1 mb-4">
+                <div class="flex justify-between"><span class="text-slate-400">اللغة / المسار:</span> <span class="font-bold text-teal-600 dark:text-teal-400">${item.riwaya || 'عام'}</span></div>
+                <div class="flex justify-between"><span class="text-slate-400">المستوى:</span> <span class="font-semibold">${item.gender && item.gender !== 'الجميع' ? item.gender : 'كل المستويات'}</span></div>
+                <div class="flex justify-between"><span class="text-slate-400">المعلم / المشرف:</span> <span class="font-semibold">${item.sheikh || 'غير محدد'}</span></div>
+              </div>
+            ` : ''}
+
+            ${item.category === 'quran' ? `
+              <div class="bg-emerald-500/5 p-2.5 rounded-lg border border-emerald-500/10 text-[11px] space-y-1 mb-4">
+                <div class="flex justify-between"><span class="text-slate-400">الرواية / القراءة:</span> <span class="font-bold text-emerald-600 dark:text-emerald-400">${item.riwaya || 'عام'}</span></div>
+                <div class="flex justify-between"><span class="text-slate-400">المقرئ / الشيخ:</span> <span class="font-semibold">${item.sheikh || 'غير محدد'}</span></div>
+                <div class="flex justify-between"><span class="text-slate-400">الفئة:</span> <span class="font-semibold">${item.gender || 'الجميع'}</span></div>
+              </div>
+            ` : ''}
+
+            <div class="flex items-center justify-between text-xs py-2 border-t border-slate-100 dark:border-slate-800 mb-3">
+              <span class="text-slate-400">${item.category === 'quran' ? 'رسوم الحلقة / المكافأة:' : (item.category === 'languages' ? 'رسوم الدرس / الدورة:' : (item.category === 'auctions' ? 'سعر الافتتاح:' : (item.category === 'tenders' ? 'الميزانية المتوقعة:' : 'الميزانية / التمويل المطلوب:')))}</span>
+              <span class="font-extrabold text-brand-600 dark:text-emerald-400">${amountFormatted}</span>
+            </div>
+
+            <!-- تقييم المجتمع -->
+            <div class="flex items-center justify-between mb-3 text-[11px]">
+              <div class="flex items-center gap-0.5 text-amber-400" title="تقييم المجتمع">
+                ${[1,2,3,4,5].map(s => `<i class="fa-${(item.rating || 0) >= s ? 'solid' : 'regular'} fa-star cursor-pointer" onclick="rateCard('${item.id}', ${s})"></i>`).join('')}
+                <span class="text-slate-400 mr-1">${item.rating ? Number(item.rating).toFixed(1) : '—'}</span>
+                <span class="text-slate-400">(${item.ratingCount || 0})</span>
+              </div>
+              <button onclick="reportListing('${item.id}')" class="text-[10px] text-slate-400 hover:text-red-500"><i class="fa-regular fa-flag"></i> إبلاغ</button>
+              ${item.verified_level ? `<span class="text-[10px] font-bold text-blue-600 dark:text-blue-400"><i class="fa-solid fa-shield-halved"></i> ${item.verified_level}</span>` : ''}
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2 pt-2 border-t border-slate-100 dark:border-slate-800">
+            <button onclick="openContactModal('${item.id}')" class="flex-grow bg-slate-900 hover:bg-slate-800 dark:bg-brand-600 dark:hover:bg-brand-700 text-white font-bold text-xs py-2 rounded-lg transition text-center flex items-center justify-center gap-1.5">
+              <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+              <span>تواصل عبر الواتساب</span>
+            </button>
+            
+            ${item.link ? `<a href="${item.link}" target="_blank" rel="noopener noreferrer" class="text-xs font-bold px-3 py-2 rounded-lg bg-amber-500/15 text-amber-700 dark:text-amber-400 border border-amber-500/30 whitespace-nowrap"><i class="fa-solid ${item.category === 'quran' ? 'fa-headphones' : (item.category === 'languages' ? 'fa-circle-play' : 'fa-file-lines')}"></i> ${item.category === 'quran' ? 'استمع لتلاوة' : (item.category === 'languages' ? 'تعريف / عيّنة' : 'عرض الدراسة')}</a>` : ''}
+            <button onclick="openMatches('${item.id}')" title="الخيارات المطابقة" class="text-xs font-bold px-3 py-2 rounded-lg bg-indigo-500/10 text-indigo-700 dark:text-indigo-300 border border-indigo-500/30 whitespace-nowrap"><i class="fa-solid fa-link"></i> المطابقات</button>
+            <button onclick="openShareModal('${item.id}')" title="مشاركة" class="p-2 text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 text-xs bg-slate-100 dark:bg-slate-800 rounded-lg transition">
+              <i class="fa-solid fa-share-nodes"></i>
+            </button>
+          </div>
+        </div>
+      `;
+    }
+
+    function updateMetricCounters() {
+      const totalQuran = opportunitiesData.filter(i => i.category === 'quran').length;
+      const totalProjects = opportunitiesData.filter(i => i.category === 'projects' || i.category === 'demands').length;
+      const totalFunding = opportunitiesData.filter(i => i.category === 'funding').length;
+      const totalIdeas = opportunitiesData.filter(i => i.category === 'ideas').length;
+      const totalLang = opportunitiesData.filter(i => i.category === 'languages').length;
+      const langEl = document.getElementById('stat-languages'); if (langEl) langEl.innerText = totalLang;
+
+      document.getElementById('stat-quran').innerText = totalQuran;
+      document.getElementById('stat-projects').innerText = totalProjects;
+      document.getElementById('stat-funding').innerText = totalFunding;
+      document.getElementById('stat-ideas').innerText = totalIdeas;
+    }
+
+    // ==========================================
+    // 5. SOCIAL SHARE & CONTACT HANDLERS
+    // ==========================================
+    function openShareModal(cardId = null) {
+      currentSelectedCardForShare = cardId ? opportunitiesData.find(i => i.id === cardId) : null;
+      currentShareUrl = cardId ? listingUrl(cardId) : baseUrl();
+      document.getElementById('share-link-input').value = currentShareUrl;
+      document.getElementById('share-modal').classList.remove('hidden');
+    }
+
+    function closeShareModal() {
+      document.getElementById('share-modal').classList.add('hidden');
+    }
+
+    function shareVia(platform) {
+      const currentUrl = encodeURIComponent(currentShareUrl || baseUrl());
+      const title = currentSelectedCardForShare ? encodeURIComponent(`فرصة عبر وفاق: ${currentSelectedCardForShare.title}`) : encodeURIComponent("منصة وفاق العالمية للمشاريع والتحفيظ");
+      
+      let link = '';
+      if (platform === 'whatsapp') link = `https://api.whatsapp.com/send?text=${title}%20${currentUrl}`;
+      else if (platform === 'telegram') link = `https://t.me/share/url?url=${currentUrl}&text=${title}`;
+      else if (platform === 'x') link = `https://twitter.com/intent/tweet?text=${title}&url=${currentUrl}`;
+      else if (platform === 'linkedin') link = `https://www.linkedin.com/sharing/share-offsite/?url=${currentUrl}`;
+
+      if (link) window.open(link, '_blank');
+    }
+
+    function copyShareLink() {
+      const input = document.getElementById('share-link-input');
+      input.select();
+      navigator.clipboard.writeText(input.value);
+      alert("تم نسخ رابط المنصة/الفرصة بنجاح!");
+    }
+
+    function sharePlatform() {
+      if (navigator.share) {
+        navigator.share({
+          title: 'منصة وِفَاق العالمية',
+          text: 'رادار الربط بين المشاريع، طالبي التمويل، والمقارئ القرآنية العالمية.',
+          url: baseUrl()
+        }).catch(() => openShareModal());
+      } else {
+        openShareModal();
+      }
+    }
+
+    // WhatsApp Contact Handler
+    function openContactModal(id) {
+      if (!currentUser) {
+        openAuthModal();
+        showRealtimeNotification('سجّل الدخول (بالبريد فقط) لتظهر لك وسائل التواصل مع المعلن');
+        return;
+      }
+      currentSelectedCardForContact = opportunitiesData.find(i => i.id === id);
+      if (!currentSelectedCardForContact) return;
+
+      document.getElementById('contact-modal').classList.remove('hidden');
+      updateWhatsAppTemplate();
+      renderContactExtras(currentSelectedCardForContact);
+    }
+
+    function closeContactModal() {
+      document.getElementById('contact-modal').classList.add('hidden');
+    }
+
+    function updateWhatsAppTemplate() {
+      if (!currentSelectedCardForContact) return;
+      const senderName = document.getElementById('sender-name').value || 'مهتم عبر منصة وفاق';
+      const template = `السلام عليكم ورحمة الله وبركاته،\n\nأنا (${senderName})، أتواصل معكم عبر [منصة وِفَاق - Wefaq Global Radar].\n\nأود الاستفسار والتوافق بشأن الرقم المرجعي (#${currentSelectedCardForContact.id}):\n📌 العنوان: "${currentSelectedCardForContact.title}"\n📍 المنطقة: ${currentSelectedCardForContact.region}\n\nيرجى تزويدي بالتفاصيل المباشرة للبدء. شكراً لكم.`;
+      
+      document.getElementById('whatsapp-template-text').value = template;
+    }
+
+    function sendWhatsAppMessage() {
+      if (!currentSelectedCardForContact) return;
+      const phone = currentSelectedCardForContact.phone.replace(/[^0-9]/g, '');
+      const text = encodeURIComponent(document.getElementById('whatsapp-template-text').value);
+      window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+    }
+
+    function copyContactText() {
+      const textarea = document.getElementById('whatsapp-template-text');
+      textarea.select();
+      navigator.clipboard.writeText(textarea.value);
+      alert("تم نسخ الرسالة للحافظة بنجاح!");
+    }
+
+    // ==========================================
+    // 6. MODALS & FORMS HANDLERS
+    // ==========================================
+    function openCreateModal(defaultCategory = 'invest') {
+      const modal = document.getElementById('create-modal');
+      modal.classList.remove('hidden');
+      
+      const catSelect = document.getElementById('new-category');
+      if (defaultCategory === 'quran') catSelect.value = 'quran';
+      else if (defaultCategory === 'funding') catSelect.value = 'funding';
+      else if (defaultCategory === 'languages') catSelect.value = 'languages';
+      toggleFormFields();
+    }
+
+    function closeCreateModal() {
+      document.getElementById('create-modal').classList.add('hidden');
+    }
+
+    function toggleFormFields() {
+      const cat = document.getElementById('new-category').value;
+      const quranFields = document.getElementById('quran-form-fields');
+      if (cat === 'quran') {
+        quranFields.classList.remove('hidden');
+      } else {
+        quranFields.classList.add('hidden');
+      }
+      const langFields = document.getElementById('languages-form-fields');
+      if (langFields) langFields.classList.toggle('hidden', cat !== 'languages');
+      const dealF = document.getElementById('deal-form-fields');
+      if (dealF) {
+        dealF.classList.toggle('hidden', cat !== 'tenders' && cat !== 'auctions');
+        document.getElementById('deal-title').textContent = cat === 'auctions' ? 'تفاصيل المزاد' : 'تفاصيل المناقصة';
+        document.getElementById('deal-hint').textContent = cat === 'auctions'
+          ? 'حقل المبلغ أعلاه هو سعر الافتتاح. تظهر أعلى مزايدة للجميع دون أسماء المزايدين، وترى وحدك المزايدين ووسائل تواصلهم. المنصة لا تحتفظ بالأموال ولا تضمن الدفع.'
+          : 'حقل المبلغ أعلاه هو ميزانيتك المتوقعة (اختياري). العروض المقدمة سرية ولا يراها غيرك. المنصة لا تحتفظ بالأموال ولا تضمن التنفيذ.';
+      }
+      const fw = document.getElementById('fee-waiver-box');
+      if (fw) fw.classList.toggle('hidden', cat === 'funding' || cat === 'ideas');
+      const lk = document.getElementById('new-link');
+      if (lk) lk.placeholder = ({
+        quran: 'رابط تلاوة قصيرة لك (صوتي أو يوتيوب) لتُراجَع وتنال شارة «قارئ مُراجَع» - اختياري',
+        languages: 'رابط تعريف بك أو عيّنة درس (يوتيوب مثلاً) - اختياري. لا تضع رابط حصة خاصة فهو يظهر للجميع'
+      })[cat] || 'رابط الفكرة أو الدراسة (Google Drive / PDF) - اختياري';
+    }
+
+    async function handleFormSubmit(e) {
+      e.preventDefault();
+      if (!currentUser) { openAuthModal(); return; }
+      
+      const category = document.getElementById('new-category').value;
+      const titleVal = document.getElementById('new-title').value;
+      const regionVal = document.getElementById('new-region').value;
+      const typeVal = document.getElementById('new-type').value;
+      const amountVal = parseFloat(document.getElementById('new-amount').value) || 0;
+      const descVal = document.getElementById('new-description').value;
+      const phoneVal = document.getElementById('new-phone').value;
+      const licenseVal = document.getElementById('new-license').value || '';
+      
+      let riwayaVal = document.getElementById('new-riwaya')?.value || '';
+      let sheikhVal = document.getElementById('new-sheikh')?.value || '';
+      let genderVal = document.getElementById('new-gender')?.value || 'الجميع';
+      const waive = ((document.querySelector('input[name="fee-choice"]:checked') || {}).value === 'waive') && category !== 'funding' && category !== 'ideas';
+      let endsIso = null;
+      if (category === 'tenders' || category === 'auctions') {
+        const ev = document.getElementById('new-ends').value;
+        const ed = ev ? new Date(ev) : null;
+        if (!ed || isNaN(ed) || ed.getTime() <= Date.now() + 3600000) { alert('حدد موعد إغلاق بعد ساعة على الأقل من الآن'); return; }
+        if (ed.getTime() > Date.now() + 120 * 86400000) { alert('أقصى مدة 120 يوماً'); return; }
+        endsIso = ed.toISOString();
+      }
+      if (category === 'languages') {
+        // نعيد استخدام أعمدة الجدول الحالية: riwaya=اللغة/المسار، sheikh=المعلم، gender=المستوى
+        riwayaVal = document.getElementById('new-lang-track').value;
+        sheikhVal = (document.getElementById('new-lang-teacher').value || '').trim().slice(0, 80);
+        genderVal = document.getElementById('new-lang-level').value;
+      }
+
+      // بناء البطاقة الأولية ثم تمريرها لمحرك الذكاء الاصطناعي للتحسين
+      let newCard = {
+        id: Date.now().toString(),
+        title: titleVal,
+        category: category,
+        region: regionVal,
+        type: typeVal,
+        amount: amountVal,
+        currency: 'SAR',
+        description: descVal,
+        riwaya: riwayaVal,
+        sheikh: sheikhVal,
+        gender: genderVal,
+        license: licenseVal,
+        phone: phoneVal,
+        badge: category === 'quran' ? 'sanad' : (category === 'ideas' || category === 'funding' ? 'feasibility' : 'verified'),
+        createdAt: new Date().toISOString().split('T')[0]
+      };
+
+      // تشغيل محرك الذكاء الاصطناعي لتحسين التصنيف والوسوم
+      try {
+        newCard = await processNewListingWithAI(newCard);
+      } catch (aiErr) {
+        console.warn("AI processing skipped:", aiErr);
+      }
+
+      if (!supabaseClient) { alert('تعذر الاتصال بالخادم، حاول لاحقاً'); return; }
+      const { data: ins, error } = await supabaseClient.from('listings').insert([{
+        title: newCard.title, category: newCard.category, region: newCard.region, type: newCard.type,
+        amount: newCard.amount, description: newCard.description, riwaya: newCard.riwaya,
+        sheikh: newCard.sheikh, gender: newCard.gender, license: newCard.license, phone: newCard.phone,
+        link: safeUrl((document.getElementById('new-link')||{}).value),
+        city: fval('new-city').trim().slice(0,80), telegram: cleanTg(fval('new-telegram')), contact_email: cleanEmail(fval('new-email')),
+        ...(endsIso ? { ends_at: endsIso } : {})
+      }]).select('id').single();
+      if (error) { alert('تعذر إرسال الطلب: ' + error.message); return; }
+      if (waive) {
+        const w = await supabaseClient.from('fee_waivers').insert({ user_id: currentUser.id });
+        if (w.error && w.error.code !== '23505') showRealtimeNotification('نُشر إعلانك، لكن تعذّر تسجيل طلب الإعفاء. تواصل مع الإدارة');
+      }
+      // طلب توثيق اختياري
+      const vType = (document.getElementById('new-verify-type') || {}).value || '';
+      const vLink = ((document.getElementById('new-verify-link') || {}).value || '').trim().slice(0, 500);
+      const vNote = ((document.getElementById('new-verify-note') || {}).value || '').trim().slice(0, 400);
+      if (vType && ins && ins.id) {
+        const vr = await supabaseClient.from('verification_requests').insert({
+          listing_id: ins.id,
+          user_id: currentUser.id,
+          request_type: vType,
+          doc_link: vLink || null,
+          note: vNote || null,
+          status: 'pending'
+        });
+        if (vr.error) {
+          console.warn('verification request', vr.error);
+          showRealtimeNotification('نُشر الإعلان. لتعمل طلبات التوثيق شغّل supabase-verification.sql');
+        } else {
+          showRealtimeNotification('تم إرسال طلب التوثيق للإدارة ✓');
+        }
+      }
+      const fwBox = document.getElementById('fee-waiver-box'); if (fwBox) fwBox.open = false;
+      closeCreateModal();
+      document.getElementById('create-card-form').reset();
+      await fetchOpportunitiesFromSupabase();
+      showRealtimeNotification('تم نشر إعلانك ✓');
+      if (ins) openPostPublishPromo(String(ins.id));
+    }
+
+    // ==========================================
+    // 7. SUPABASE & JSON DATA EXPORT/IMPORT
+    // ==========================================
+    async function fetchOpportunitiesFromSupabase() {
+      if (!supabaseClient) return;
+      const icon = document.getElementById('sync-icon'); if (icon) icon.classList.add('animate-spin');
+      try {
+        const PUBLIC_COLS = 'id,title,category,region,type,amount,description,riwaya,sheikh,gender,license,link,city,status,badge,user_id,created_at';
+        const qL = cols => supabaseClient.from('listings').select(cols).eq('status','approved').order('created_at',{ascending:false});
+        let [l, r, f, bsr] = await Promise.all([
+          qL(currentUser ? '*' : PUBLIC_COLS + ',ends_at'),
+          supabaseClient.from('listing_ratings').select('*'),
+          supabaseClient.from('featured_users').select('user_id'),
+          supabaseClient.from('listing_bid_stats').select('*')]);
+        if (l.error && !currentUser) l = await qL(PUBLIC_COLS); // قبل تشغيل SQL المزادات لا يوجد عمود ends_at
+        if (l.error) throw l.error;
+        const bs = {}; ((bsr && bsr.data) || []).forEach(x => bs[x.listing_id] = x);
+        const rt = {}; (r.data||[]).forEach(x => rt[x.listing_id] = x);
+        const fset = new Set(((f && f.data) || []).map(x => x.user_id));
+        opportunitiesData = (l.data||[]).map(i => ({
+          id:String(i.id), title:esc(i.title), category:i.category, region:i.region||'GLOBAL', type:i.type||'offer',
+          amount:i.amount||0, currency:'SAR', description:esc(i.description||''), riwaya:esc(i.riwaya||''), sheikh:esc(i.sheikh||''),
+          gender:i.gender||'الجميع', license:esc(i.license||''), phone:esc(i.phone||''), link:safeUrl(i.link), featured:fset.has(i.user_id), uid:i.user_id, createdTs:i.created_at, city:esc((i.city||'').slice(0,80)), telegram:cleanTg(i.telegram), email:cleanEmail(i.contact_email), badge:i.badge||'unverified',
+          createdAt:(i.created_at||'').split('T')[0],
+          endsAt: i.ends_at || null, topBid: bs[i.id] ? (Number(bs[i.id].top_bid) || 0) : 0, bidCount: bs[i.id] ? bs[i.id].cnt : 0,
+          rating: rt[i.id] ? Number(rt[i.id].avg_rating) : 0, ratingCount: rt[i.id] ? rt[i.id].cnt : 0 }));
+        opportunitiesData.sort((a,b)=>(b.featured?1:0)-(a.featured?1:0));
+        if (focusListingId) {
+          const f = opportunitiesData.find(x => x.id === String(focusListingId));
+          if (f) { document.title = f.title.replace(/&[a-z#0-9]+;/g, ' ') + ' | وِفَاق'; }
+          else { showRealtimeNotification('هذا الإعلان لم يعد متاحاً'); focusListingId = null; history.replaceState(null, '', baseUrl()); }
+        }
+        renderCards(); updateMetricCounters(); runSmartMatching();
+        if (focusListingId) setTimeout(() => { const m = document.getElementById('marketplace-section'); if (m) m.scrollIntoView({ behavior: 'smooth' }); }, 300);
+      } catch (e) { console.error(e); showRealtimeNotification('تعذر تحميل البيانات من الخادم'); }
+      finally { if (icon) icon.classList.remove('animate-spin'); }
+    }
+
+    function triggerFeedRefresh() {
+      fetchOpportunitiesFromSupabase();
+      startRealtimeSync(); // إعادة تفعيل القناة اللحظية
+      showRealtimeNotification("جاري مزامنة البيانات السحابية وتفعيل الاستماع اللحظي...");
+    }
+
+    // ==========================================
+    // قراء أفريقيا + استيراد مقارئ خارجي + تقييم + مطابقة
+    // ==========================================
+
+    /** تصفية سريعة: قراء ومقارئ القرآن في أفريقيا */
+    function showAfricaQuranReciters() {
+      setCategoryFilter('quran');
+      document.getElementById('filter-region').value = 'AFRICA';
+      renderCards();
+      showRealtimeNotification('تم عرض قراء ومقارئ القرآن في أفريقيا ✓');
+      document.getElementById('marketplace-section')?.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    /**
+     * قاعدة بيانات مقارئ خارجية (أفريقيا + فلسطين + دول أجنبية)
+     * يمكن لاحقاً جلبها من API أو ملف JSON خارجي
+     */
+    
+
+    /** استيراد مقارئ خارجي إلى الرادار */
+    function importExternalReciters(){ }
+
+    // ==========================================
+    // جلب من فيسبوك + فريلانسر (بيانات منسّقة + لصق نص)
+    // ==========================================
+
+    function openSocialImportModal(){ }
+    function closeSocialImportModal(){ }
+
+    /** بيانات محاكاة لمنشورات مجموعات فيسبوك (قرآن) */
+    
+
+    /** بيانات محاكاة لمجموعات فيسبوك (مشاريع وتمويل) */
+    
+
+    /** بيانات محاكاة من منصات فريلانسر عربية وعالمية */
+    
+
+    function importFromSource(){ }
+
+    /** تحليل نص منشور ملصوق (من فيسبوك أو فريلانسر) بالذكاء الاصطناعي المحلي */
+    async function parsePastedSocialPost(){ }
+
+    /** تقييم بطاقة (محلي + حفظ) */
+    async function rateCard(id, stars) {
+      if (!currentUser) { openAuthModal(); return; }
+      const { error } = await supabaseClient.from('ratings').upsert({ listing_id: id, user_id: currentUser.id, stars }, { onConflict: 'listing_id,user_id' });
+      if (error) { alert('تعذر حفظ التقييم: ' + error.message); return; }
+      await fetchOpportunitiesFromSupabase();
+      showRealtimeNotification('شكراً لتقييمك');
+    }
+
+    /** استعادة التقييمات المحفوظة */
+    function loadSavedRatings() { return;
+      try {
+        const all = JSON.parse(localStorage.getItem('wefaq_ratings_v1') || '{}');
+        opportunitiesData.forEach(item => {
+          if (all[item.id]) {
+            item.rating = all[item.id].rating;
+            item.ratingCount = all[item.id].ratingCount;
+          }
+        });
+      } catch (_) {}
+    }
+
+    /** مطابقة ذكية بسيطة: ربط طلبات وعروض القرآن المتوافقة */
+    function runSmartMatching() {
+      const bar = document.getElementById('smart-match-bar');
+      const list = document.getElementById('smart-match-list');
+      if (!bar || !list) return;
+
+      const quranOffers = opportunitiesData.filter(i => i.category === 'quran' && (i.type === 'offer'));
+      const quranDemands = opportunitiesData.filter(i => i.category === 'quran' && (i.type === 'demand' || i.type === 'seeking_partner'));
+
+      const matches = [];
+      quranDemands.forEach(d => {
+        quranOffers.forEach(o => {
+          let score = 0;
+          if (d.riwaya && o.riwaya && (d.riwaya === o.riwaya || o.riwaya.includes('عشر') || d.riwaya.includes('عشر'))) score += 40;
+          if (d.gender && o.gender && (d.gender === o.gender || o.gender === 'الجميع' || d.gender === 'الجميع')) score += 25;
+          if (d.mode && o.mode && (d.mode === o.mode || o.mode === 'online')) score += 20;
+          if (d.region && o.region && (d.region === o.region || o.region === 'GLOBAL' || d.region === 'GLOBAL')) score += 15;
+          if (score >= 50) {
+            matches.push({ demand: d, offer: o, score });
+          }
+        });
+      });
+
+      matches.sort((a, b) => b.score - a.score);
+      const top = matches.slice(0, 5);
+
+      if (top.length === 0) {
+        bar.classList.add('hidden');
+        return;
+      }
+
+      bar.classList.remove('hidden');
+      list.innerHTML = top.map(m => `
+        <button onclick="highlightMatch('${m.demand.id}','${m.offer.id}')"
+          class="bg-white dark:bg-slate-800 border border-indigo-200 dark:border-indigo-700 rounded-lg px-2.5 py-1.5 hover:shadow transition text-right">
+          <span class="text-indigo-600 dark:text-indigo-300 font-bold">${m.score}%</span>
+          <span class="text-slate-600 dark:text-slate-300"> تطابق: </span>
+          <span class="font-semibold">${(m.offer.sheikh || m.offer.title).substring(0, 28)}</span>
+          <span class="text-slate-400"> ← </span>
+          <span class="font-semibold">${m.demand.title.substring(0, 24)}...</span>
+        </button>
+      `).join('');
+    }
+
+    function highlightMatch(demandId, offerId) {
+      document.getElementById('search-keyword').value = '';
+      document.getElementById('filter-region').value = 'all';
+      document.getElementById('filter-type').value = 'all';
+      setCategoryFilter('quran');
+      // تمييز مؤقت
+      setTimeout(() => {
+        const cards = document.querySelectorAll('#cards-container > div');
+        cards.forEach(c => {
+          const html = c.innerHTML;
+          if (html.includes(demandId) || html.includes(offerId) || true) {
+            // إعادة رسم مع تمييز عبر البحث بأسماء مختصرة
+          }
+        });
+        showRealtimeNotification('تم عرض الفئتين المتطابقتين في رادار القرآن');
+      }, 200);
+    }
+
+    function exportCardsJSON() {
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(opportunitiesData, null, 2));
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute("href", dataStr);
+      downloadAnchor.setAttribute("download", `Wefaq_Global_Hub_${new Date().toISOString().split('T')[0]}.json`);
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+    }
+
+    function importCardsJSON(){ }
+
+    // ===== Auth =====
+    let currentUser = null;
+    function disabledFeature() { alert('هذه الميزة غير متاحة: تُنشر العروض من أصحابها فقط.'); }
+    function openAuthModal() { document.getElementById('auth-modal').classList.remove('hidden'); }
+    function closeAuthModal() { document.getElementById('auth-modal').classList.add('hidden'); document.getElementById('auth-msg').textContent=''; }
+    async function authSubmit(mode) {
+      if (!supabaseClient) return;
+      const email = document.getElementById('auth-email').value.trim(), password = document.getElementById('auth-pass').value;
+      const msg = document.getElementById('auth-msg');
+      if (!email || password.length < 6) { msg.textContent = 'أدخل بريداً صحيحاً وكلمة مرور 6 أحرف على الأقل'; return; }
+      const res = mode === 'signup' ? await supabaseClient.auth.signUp({ email, password }) : await supabaseClient.auth.signInWithPassword({ email, password });
+      if (res.error) { msg.textContent = res.error.message; return; }
+      if (mode === 'signup' && !res.data.session) { msg.textContent = 'أرسلنا رابط تأكيد إلى بريدك، افتحه ثم سجّل الدخول'; return; }
+      closeAuthModal();
+    }
+    async function authSignOut() { await supabaseClient.auth.signOut(); }
+    function refreshAuthUI() {
+      const b = document.getElementById('auth-btn');
+      b.textContent = currentUser ? 'خروج' : 'دخول / تسجيل';
+      b.onclick = currentUser ? authSignOut : openAuthModal;
+    }
+    document.getElementById('theme-toggle').insertAdjacentHTML('beforebegin', '<button id="auth-btn" class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-xs py-1.5 px-2 font-semibold"></button>');
+    document.body.insertAdjacentHTML('beforeend', `<div id="auth-modal" class="hidden fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-4">
+      <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 w-full max-w-sm space-y-3">
+        <h3 class="font-bold text-lg">تسجيل الدخول</h3>
+        <input id="auth-email" type="email" placeholder="البريد الإلكتروني" class="w-full border rounded-lg p-2 text-sm dark:bg-slate-800">
+        <input id="auth-pass" type="password" placeholder="كلمة المرور" class="w-full border rounded-lg p-2 text-sm dark:bg-slate-800">
+        <p class="text-[11px] text-slate-500">بالتسجيل توافق على <a href="#" onclick="openLegal();return false" class="underline">الشروط وسياسة الخصوصية</a></p>
+        <p id="auth-msg" class="text-xs text-red-600"></p>
+        <div class="flex gap-2"><button onclick="authSubmit('signin')" class="flex-1 bg-brand-600 text-white rounded-lg py-2 text-sm font-bold">دخول</button>
+        <button onclick="authSubmit('signup')" class="flex-1 border rounded-lg py-2 text-sm font-bold">حساب جديد</button></div>
+        <button onclick="closeAuthModal()" class="text-xs text-slate-500">إغلاق</button></div></div>`);
+    if (supabaseClient) {
+      supabaseClient.auth.onAuthStateChange((_e, s) => { const was = currentUser ? currentUser.id : null; currentUser = s ? s.user : null; refreshAuthUI(); if ((currentUser ? currentUser.id : null) !== was) setTimeout(() => fetchOpportunitiesFromSupabase(), 0); });
+      supabaseClient.auth.getSession().then(({ data }) => { currentUser = data.session ? data.session.user : null; refreshAuthUI(); });
+    } else refreshAuthUI();
+
+    // ===== Admin review + legal =====
+    const CONTACT_EMAIL = ''; // ضع بريد التواصل الحقيقي هنا
+    function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+    let isAdmin = false;
+    async function checkAdmin() {
+      isAdmin = false;
+      if (currentUser && supabaseClient) {
+        const { data } = await supabaseClient.from('admins').select('user_id').eq('user_id', currentUser.id).maybeSingle();
+        isAdmin = !!data;
+      }
+      document.getElementById('admin-btn').classList.toggle('hidden', !isAdmin);
+    }
+    function closeAdmin(){ document.getElementById('admin-modal').classList.add('hidden'); }
+    async function openAdmin(){ document.getElementById('admin-modal').classList.remove('hidden'); await loadPending(); await loadHidden(); }
+    async function loadPending() {
+      const box = document.getElementById('admin-list');
+      box.innerHTML = '<p class="text-sm text-slate-500">جارٍ التحميل...</p>';
+      const { data, error } = await supabaseClient.from('listings').select('*').eq('status','approved').order('created_at',{ascending:false}).limit(50);
+      if (error) { box.textContent = 'خطأ: ' + error.message; return; }
+      if (!data.length) { box.innerHTML = '<p class="text-sm text-slate-500">لا توجد إعلانات بعد.</p>'; return; }
+      const wv = await supabaseClient.from('fee_waivers').select('user_id');
+      const waivers = new Set(((wv && wv.data) || []).map(x => x.user_id));
+      box.innerHTML = data.map(i => `<div class="border rounded-xl p-3 space-y-1 text-sm">
+        <div class="font-bold">${esc(i.title)}</div>
+        ${waivers.has(i.user_id) ? '<div class="text-xs font-bold text-rose-600">🤝 صاحب الإعلان طلب الإعفاء من حصة المنصة</div>' : ''}
+        <div class="text-xs text-slate-500">${esc(i.category)} · ${esc(i.type)} · ${esc(i.region)} · ${esc(i.amount)}</div>
+        <div class="text-xs whitespace-pre-line">${esc(i.description)}</div>
+        <div class="text-xs">${i.sheikh ? 'الشيخ: ' + esc(i.sheikh) + ' · ' : ''}${i.riwaya ? 'الرواية: ' + esc(i.riwaya) + ' · ' : ''}${i.license ? 'الإجازة/الترخيص: ' + esc(i.license) + ' · ' : ''}هاتف: ${esc(i.phone)}${safeUrl(i.link) ? ' · <a class="underline text-blue-600" target="_blank" rel="noopener noreferrer" href="' + safeUrl(i.link) + '">رابط المرفق / التلاوة</a>' : ''}</div>
+        <div class="flex flex-wrap gap-2 pt-1 items-center">
+          <select id="bd-${esc(i.id)}" class="border rounded p-1 text-xs dark:bg-slate-800"><option value="reviewed">مُراجَع (استمعتُ/تحققتُ، بلا إجازة)</option><option value="sanad">مجاز بالسند (إجازة مُراجَعة)</option><option value="verified">موثق (ترخيص/سجل)</option><option value="feasibility">دراسة جدوى</option><option value="unverified">بلا شارة</option></select>
+          <button onclick="moderate('${esc(i.id)}','approved')" class="bg-brand-600 text-white rounded px-3 py-1 text-xs font-bold">تطبيق الشارة</button>
+          <button onclick="banUser('${esc(i.user_id)}')" class="border border-red-300 text-red-600 rounded px-3 py-1 text-xs">حظر صاحب الإعلان</button>
+          <button onclick="grantFeatured('${esc(i.user_id)}',30)" class="border rounded px-3 py-1 text-xs">⭐ مميز 30 يوماً</button>
+          <button onclick="moderate('${esc(i.id)}','rejected')" class="border rounded px-3 py-1 text-xs">إخفاء</button>
+        </div></div>`).join('');
+    }
+    async function moderate(id, status) {
+      const upd = { status };
+      if (status === 'approved') upd.badge = document.getElementById('bd-' + id).value;
+      const { error } = await supabaseClient.from('listings').update(upd).eq('id', id);
+      if (error) { alert(error.message); return; }
+      await loadPending(); await loadHidden(); fetchOpportunitiesFromSupabase();
+    }
+    function openLegal(){ document.getElementById('legal-modal').classList.remove('hidden'); }
+    function closeLegal(){ document.getElementById('legal-modal').classList.add('hidden'); }
+    document.getElementById('auth-btn').insertAdjacentHTML('beforebegin', '<button id="admin-btn" onclick="openAdmin()" class="hidden bg-amber-500 text-white rounded-lg text-xs py-1.5 px-2 font-bold">الإدارة</button>');
+    const contactLine = CONTACT_EMAIL ? `<p>للتواصل أو الإبلاغ عن أي إعلان مخالف أو طلب حذف بياناتك: <a class="underline" href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a></p>` : '';
+    document.body.insertAdjacentHTML('beforeend', `
+      <div class="text-center text-xs py-4 text-slate-500"><a href="#" onclick="openLegal();return false" class="underline">الشروط وسياسة الخصوصية</a></div>
+      <div id="admin-modal" class="hidden fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-4"><div class="bg-white dark:bg-slate-900 rounded-2xl p-5 w-full max-w-2xl max-h-[85vh] overflow-y-auto space-y-3">
+        <div class="flex justify-between items-center"><h3 class="font-bold text-lg">أحدث الإعلانات (منح شارة / إخفاء)</h3><button onclick="closeAdmin()" class="text-sm">إغلاق ✕</button></div><div id="admin-list" class="space-y-3"></div><h4 class="font-bold pt-3 text-sm">مخفية (بلاغات أو رفض)</h4><div id="admin-hidden" class="space-y-2"></div><h4 class="font-bold pt-3 text-sm">المحظورون</h4><div id="admin-banned" class="space-y-2"></div></div></div>
+      <div id="legal-modal" class="hidden fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-4"><div class="bg-white dark:bg-slate-900 rounded-2xl p-5 w-full max-w-2xl max-h-[85vh] overflow-y-auto space-y-3 text-sm leading-relaxed">
+        <div class="flex justify-between items-center"><h3 class="font-bold text-lg">الشروط وسياسة الخصوصية</h3><button onclick="closeLegal()" class="text-sm">إغلاق ✕</button></div>
+        <h4 class="font-bold">طبيعة المنصة</h4>
+        <p>منصة وِفَاق وسيط لعرض الفرص والطلبات فقط، ولسنا طرفاً في أي اتفاق أو شراكة أو تمويل أو تعاقد تحفيظ يتم بين المستخدمين، ولا نضمن نتائجها. ما يُعرض ليس نصيحة استثمارية أو مالية أو قانونية، فتحقق بنفسك من الطرف الآخر قبل أي التزام أو تحويل مالي.</p>
+        <h4 class="font-bold">النشر والتحقق</h4>
+        <p>تُنشر الإعلانات والطلبات فور إرسالها دون مراجعة مسبقة. <b>مسؤولية التحقق من صدق الطرف الآخر وصحة عرضه تقع على المستخدم</b> (عارضاً كان أو طالباً)، فاطلب المستندات والإجازات، ولا تحوّل مبالغ قبل التأكد. الشارات (موثق، سند، دراسة جدوى) تُمنح فقط بعد فحص إدارة المنصة للمستندات، والإعلان بلا شارة يُعد غير موثق. نحذف الإعلانات المخالفة عند علمنا بها.</p>
+        <h4 class="font-bold">التزامات المستخدم</h4>
+        <p>يجب أن تكون المعلومات صحيحة وأن تملك حق نشرها، ويُمنع الاحتيال وانتحال الصفة والمحتوى المسيء أو المخالف للقانون والإعلانات المضللة. يحق لنا رفض أي إعلان أو حذفه أو إغلاق الحساب المخالف.</p>
+        <h4 class="font-bold">عمولة المنصة</h4>
+        <p>تتقاضى المنصة عمولة قدرها <b>1.5% من قيمة الصفقة، وتقع على العارض</b> (مستلم المبلغ)، ويدفع الطالب السعر المتفق عليه كما هو. لا تُطبَّق العمولة حالياً على صفقات التمويل والشراكة الاستثمارية. ولا عمولة على العروض المجانية. <b>ولمن تعثّرت ظروفه المادية أن يطلب الإعفاء من العمولة عند النشر</b> دون إثبات، وتبقى هذه الرغبة سرية عن الزوار ولا يراها إلا فريق الإدارة، ويُقرَّر الإعفاء بتقدير الإدارة. يتم الدفع عبر <b>محفظة</b>، وتُرسَل أرقام محفظة المنصة <b>عند الطلب فقط</b> من إدارة المنصة نفسها، فلا تحوّل لأي رقم يذكره لك طرف آخر على أنه للمنصة.</p>
+        <h4 class="font-bold">الالتزام والحظر</h4>
+        <p>من يتم اتفاقه عبر المنصة ولا يلتزم بسداد العمولة المستحقة أو بشروطها يُحظر من المنصة بعد إخطاره: تُخفى إعلاناته، ويُمنع من النشر والتقييم، وتُعد <b>تقييماته السابقة غير صالحة</b> ولا تُحتسب. وللمحظور طلب التظلم بالتواصل مع الإدارة.</p>
+        <h4 class="font-bold">الخصوصية</h4>
+        <p>نجمع بريدك الإلكتروني لإنشاء الحساب، والبيانات التي تدخلها في إعلانك وتقييماتك. <b>رقم الهاتف وتيليجرام والبريد التي تكتبها في الإعلان تظهر للمستخدمين المسجّلين فقط، أما بقية الإعلان فيظهر للجميع.</b> تُخزَّن البيانات لدى مزوّد الخدمة السحابية Supabase، ولا نبيعها لأي جهة. لك طلب تعديل بياناتك أو حذفها في أي وقت.</p>
+        ${contactLine}
+        <p class="text-xs text-slate-500">نص عام قابل للتعديل، ويُستحسن مراجعته مع مستشار قانوني في بلدك قبل الاستخدام التجاري.</p></div></div>`);
+    const ph = document.getElementById('new-phone');
+    if (ph) ph.insertAdjacentHTML('afterend', '<p class="text-[11px] text-amber-600">تنبيه: سيظهر هذا الرقم علناً لكل زوار المنصة فور نشره.</p>');
+    if (supabaseClient) supabaseClient.auth.onAuthStateChange((_e, s) => { setTimeout(checkAdmin, 0); });
+
+    // ===== Reports =====
+    async function reportListing(id) {
+      if (!currentUser) { openAuthModal(); return; }
+      const reason = (prompt('سبب الإبلاغ (احتيال، معلومات كاذبة، محتوى مسيء...)') || '').trim();
+      if (!reason) return;
+      if (reason.length < 3) { alert('اكتب سبباً أوضح'); return; }
+      const { error } = await supabaseClient.from('reports').insert({ listing_id: id, reason: reason.slice(0, 300) });
+      if (error) { alert(error.code === '23505' ? 'سبق أن أبلغت عن هذا الإعلان' : 'تعذر إرسال البلاغ: ' + error.message); return; }
+      showRealtimeNotification('شكراً، وصل بلاغك');
+      fetchOpportunitiesFromSupabase();
+    }
+    async function loadHidden() {
+      const box = document.getElementById('admin-hidden');
+      const { data, error } = await supabaseClient.from('listings').select('id,title').eq('status','rejected').order('created_at',{ascending:false}).limit(20);
+      if (error) { box.textContent = error.message; return; }
+      if (!data.length) { box.innerHTML = '<p class="text-xs text-slate-500">لا شيء.</p>'; return; }
+      const { data: rp } = await supabaseClient.from('reports').select('listing_id,reason').in('listing_id', data.map(x => x.id));
+      box.innerHTML = data.map(i => {
+        const rs = (rp || []).filter(r => r.listing_id === i.id).map(r => esc(r.reason)).join(' | ');
+        return `<div class="border rounded-lg p-2 text-xs"><div class="font-bold">${esc(i.title)}</div>${rs ? `<div class="text-slate-500">البلاغات: ${rs}</div>` : ''}
+          <button onclick="restoreListing('${esc(i.id)}')" class="mt-1 border rounded px-2 py-0.5">استعادة</button></div>`;
+      }).join('');
+    }
+    async function restoreListing(id) {
+      const { error } = await supabaseClient.from('listings').update({ status: 'approved' }).eq('id', id);
+      if (error) { alert(error.message); return; }
+      await loadPending(); await loadHidden(); fetchOpportunitiesFromSupabase();
+    }
+
+    // ===== Study link =====
+    function safeUrl(u){ u=String(u||'').trim(); return /^https?:\/\/[^\s"'<>]+$/i.test(u) ? u.slice(0,500) : ''; }
+    const descEl = document.getElementById('new-description');
+    if (descEl) descEl.insertAdjacentHTML('afterend', '<input id="new-link" type="url" placeholder="رابط الفكرة أو الدراسة (Google Drive / PDF) - اختياري" class="w-full mt-2 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg p-2 text-xs"><p class="text-[11px] text-slate-400 mt-1">للأفكار والدراسات: ضع رابطاً لملخص أو ملف الدراسة ليطّلع عليه الطرف الآخر قبل التواصل. تأكد أن الرابط لا يحتوي بيانات سرية.</p>');
+
+    // ===== Matching, locations, contact methods =====
+    function fval(id){ return (document.getElementById(id)||{}).value||''; }
+    function cleanTg(v){ v=String(v||'').trim().replace(/^@/,''); return /^[A-Za-z0-9_]{4,32}$/.test(v) ? v : ''; }
+    function cleanEmail(v){ v=String(v||'').trim(); return /^[^\s@<>"']+@[^\s@<>"']+\.[^\s@<>"']+$/.test(v) && v.length<=120 ? v : ''; }
+    function regionText(v){ const o=document.querySelector('#new-region option[value="'+String(v).replace(/"/g,'')+'"]'); return o ? o.textContent : esc(v||'—'); }
+    const TYPE_TXT={offer:'عرض',demand:'طلب',seeking_partner:'يطلب شريكاً'};
+    const OPP_TYPES={offer:['demand','seeking_partner'],demand:['offer'],seeking_partner:['offer']};
+    const CAT_MATCH={projects:['projects','demands'],demands:['projects','demands','services'],funding:['funding'],ideas:['ideas'],quran:['quran'],languages:['languages'],services:['services','demands'],tenders:['tenders'],auctions:['auctions']};
+    function findMatches(it){
+      const words=s=>new Set(String(s||'').toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(w=>w.length>3));
+      const a=words(it.title+' '+it.description);
+      return opportunitiesData.filter(o=>o.id!==it.id&&(OPP_TYPES[it.type]||[]).includes(o.type)&&(CAT_MATCH[it.category]||[it.category]).includes(o.category)).map(o=>{
+        let s=1;
+        if(o.region===it.region) s+=3; else if(o.region==='GLOBAL'||it.region==='GLOBAL') s+=1;
+        if(it.city&&o.city&&it.city.trim().toLowerCase()===o.city.trim().toLowerCase()) s+=3;
+        const b=words(o.title+' '+o.description); let k=0; a.forEach(w=>{ if(b.has(w)) k++; }); s+=Math.min(k,5);
+        if(it.category==='quran'){ if(it.riwaya&&o.riwaya&&it.riwaya===o.riwaya) s+=3; if(it.gender&&o.gender&&(it.gender===o.gender||o.gender==='الجميع'||it.gender==='الجميع')) s+=1; }
+        if(it.category==='languages'){ if(it.riwaya&&o.riwaya&&it.riwaya===o.riwaya) s+=4; if(it.gender&&o.gender&&(it.gender===o.gender||o.gender==='كل المستويات'||it.gender==='كل المستويات')) s+=2; }
+        return {o,s};
+      }).sort((x,y)=>y.s-x.s);
+    }
+    function closeListModal(){ document.getElementById('list-modal').classList.add('hidden'); }
+    function showList(title, html){ document.getElementById('list-title').textContent=title; document.getElementById('list-body').innerHTML=html; document.getElementById('list-modal').classList.remove('hidden'); }
+    function openMatches(id){
+      const it=opportunitiesData.find(i=>i.id===id);
+      if(!it){ showRealtimeNotification('تم النشر. ستظهر المطابقات عند تحديث الصفحة'); return; }
+      const ms=findMatches(it);
+      const head=`<div class="text-xs text-slate-500 mb-2">إعلانك: <b>${it.title}</b> (${TYPE_TXT[it.type]||''} · ${regionText(it.region)}${it.city?' · '+it.city:''})</div>`;
+      if(!ms.length){ showList('الخيارات المطابقة', head+'<p class="text-sm text-slate-500">لا توجد مطابقات حالياً. كل عرض أو طلب مناسب يُنشر لاحقاً سيظهر هنا عند فتح المطابقات من إعلانك.</p>'); return; }
+      showList('الخيارات المطابقة ('+ms.length+')', head+ms.slice(0,30).map(({o})=>`<div class="border rounded-xl p-3 text-sm space-y-1">
+        <div class="font-bold">${o.title} ${window.__lastSeen && o.createdTs && new Date(o.createdTs) > window.__lastSeen ? '<span class="text-[10px] bg-emerald-100 text-emerald-700 rounded px-1">جديد</span>' : ''}</div>
+        <div class="text-xs text-slate-500">${TYPE_TXT[o.type]||''} · 📍 ${regionText(o.region)}${o.city?' · '+o.city:''}${o.sheikh?' · '+o.sheikh:''}</div>
+        <div class="text-xs line-clamp-2">${o.description}</div>
+        <button onclick="closeListModal();openContactModal('${o.id}')" class="mt-1 bg-brand-600 text-white rounded-lg px-3 py-1 text-xs font-bold">وسائل التواصل</button></div>`).join(''));
+    }
+    async function openMine(){
+      if(!currentUser){ openAuthModal(); return; }
+      const {data,error}=await supabaseClient.from('listings').select('id,title,status').eq('user_id',currentUser.id).order('created_at',{ascending:false});
+      if(error){ alert(error.message); return; }
+      showList('إعلاناتي', data.length ? data.map(l=>{ const it=opportunitiesData.find(i=>i.id===String(l.id)); const n=it?findMatches(it).length:0;
+        return `<div class="border rounded-xl p-3 text-sm flex items-center justify-between gap-2"><div><div class="font-bold">${esc(l.title)}</div><div class="text-[11px] text-slate-500">${l.status==='approved'?'منشور':'مخفي'} · ${n} مطابقة</div></div>
+        <div class="flex gap-1"><button onclick="closeListModal();openMatches('${esc(l.id)}')" class="border rounded px-2 py-1 text-xs">المطابقات</button><button onclick="deleteMine('${esc(l.id)}')" class="border rounded px-2 py-1 text-xs text-red-600">حذف</button></div></div>`; }).join('') : '<p class="text-sm text-slate-500">لا توجد إعلانات بعد.</p>');
+    }
+    async function deleteMine(id){
+      if(!confirm('حذف هذا الإعلان نهائياً؟')) return;
+      const {error}=await supabaseClient.from('listings').delete().eq('id',id);
+      if(error){ alert(error.message); return; }
+      await fetchOpportunitiesFromSupabase(); openMine();
+    }
+
+    // ===== تاريخ الإعلان + المناقصات والمزادات + أدوات الترويج =====
+    const DEAL_CATS = ['tenders', 'auctions'];
+    const CAT_AR = { quran: 'تحفيظ قرآن', projects: 'مشروع', demands: 'طلب خدمة', funding: 'تمويل وشراكة', ideas: 'فكرة ودراسة جدوى', languages: 'تعليم لغات', services: 'عرض خدمة', tenders: 'مناقصة', auctions: 'مزاد' };
+    function fmtDateAr(ts) { if (!ts) return ''; const d = new Date(ts); return isNaN(d) ? '' : d.toLocaleDateString('ar', { year: 'numeric', month: 'long', day: 'numeric' }); }
+    function agoAr(ts) {
+      const d = new Date(ts); if (isNaN(d)) return '';
+      const m = Math.floor((Date.now() - d.getTime()) / 60000);
+      if (m < 1) return 'الآن'; if (m < 60) return 'منذ ' + m + ' دقيقة';
+      const h = Math.floor(m / 60); if (h < 24) return 'منذ ' + h + ' ساعة';
+      const dd = Math.floor(h / 24); if (dd < 30) return 'منذ ' + dd + ' يوماً';
+      const mo = Math.floor(dd / 30); if (mo < 12) return 'منذ ' + mo + ' شهراً';
+      return 'منذ ' + Math.floor(mo / 12) + ' سنة';
+    }
+    function leftAr(ts) {
+      const ms = new Date(ts).getTime() - Date.now(); if (isNaN(ms) || ms <= 0) return null;
+      const h = Math.floor(ms / 3600000); if (h < 1) return 'أقل من ساعة'; if (h < 48) return h + ' ساعة'; return Math.floor(h / 24) + ' يوماً';
+    }
+    const sarFmt = n => Number(n).toLocaleString('en-US', { maximumFractionDigits: 2 }) + ' SAR';
+    function unesc(s) { const t = document.createElement('textarea'); t.innerHTML = String(s || ''); return t.value; }
+
+    function dealBoxHTML(it) {
+      const mine = !!(currentUser && it.uid === currentUser.id);
+      let html = it.createdTs ? `<div class="text-[10px] text-slate-400 mb-2"><i class="fa-regular fa-calendar"></i> نُشر ${fmtDateAr(it.createdTs)} · ${agoAr(it.createdTs)}</div>` : '';
+      if (DEAL_CATS.includes(it.category)) {
+        const isAuc = it.category === 'auctions';
+        const left = it.endsAt ? leftAr(it.endsAt) : null;
+        const ended = !!it.endsAt && !left;
+        const status = ended ? '<span class="text-red-500 font-bold">انتهى</span>' : (left ? `ينتهي بعد <b>${left}</b>` : '');
+        const info = isAuc
+          ? `أعلى مزايدة: <b class="text-fuchsia-600">${it.topBid ? sarFmt(it.topBid) : 'لا مزايدات بعد'}</b>${it.bidCount ? ' (' + it.bidCount + ')' : ''}`
+          : `العروض المقدمة: <b>${it.bidCount || 0}</b> (سرية)`;
+        const btn = mine
+          ? `<button onclick="openBids('${it.id}')" class="bg-slate-900 dark:bg-brand-600 text-white rounded-lg px-3 py-1 text-[11px] font-bold">عروض المتقدمين (${it.bidCount || 0})</button>`
+          : (ended ? '' : `<button onclick="openBidModal('${it.id}')" class="bg-orange-500 hover:bg-orange-600 text-white rounded-lg px-3 py-1 text-[11px] font-bold">${isAuc ? 'زايد الآن' : 'قدّم عرضك'}</button>`);
+        html += `<div class="mb-3 p-2.5 rounded-lg border border-orange-500/20 bg-orange-500/5 text-[11px] space-y-1.5"><div class="flex justify-between gap-2"><span>${info}</span><span>${status}</span></div>${btn ? `<div>${btn}</div>` : ''}</div>`;
+      }
+      if (mine) html += `<div class="mb-3"><button onclick="openPromo('${it.id}')" class="text-[11px] font-bold px-3 py-1 rounded-lg bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/30">📣 أدوات ترويج إعلانك</button></div>`;
+      return html;
+    }
+
+    function openBidModal(id) {
+      const it = opportunitiesData.find(i => i.id === id); if (!it) return;
+      if (!currentUser) { openAuthModal(); showRealtimeNotification('سجّل الدخول لتقديم عرضك'); return; }
+      if (it.endsAt && !leftAr(it.endsAt)) { showRealtimeNotification('انتهى وقت استقبال العروض'); return; }
+      const isAuc = it.category === 'auctions';
+      const note = isAuc
+        ? `سعر الافتتاح: <b>${sarFmt(it.amount || 0)}</b> · أعلى مزايدة: <b>${it.topBid ? sarFmt(it.topBid) : 'لا شيء بعد'}</b>. يجب أن تزيد مزايدتك عن الأعلى.`
+        : 'سعرك سري ولا يراه إلا صاحب المناقصة.';
+      const cls = 'class="w-full border rounded-lg p-2 text-sm dark:bg-slate-800"';
+      showList(isAuc ? 'مزايدة' : 'تقديم عرض', `<div class="text-xs text-slate-500">${it.title}</div><div class="text-xs">${note}</div>
+        <input id="bid-amount" type="number" min="0" step="any" placeholder="${isAuc ? 'مزايدتك' : 'سعرك'} بالريال السعودي (SAR)" ${cls}>
+        <textarea id="bid-note" rows="3" maxlength="500" placeholder="${isAuc ? 'ملاحظة (اختياري)' : 'تفاصيل عرضك ومدة التنفيذ وخبرتك'}" ${cls}></textarea>
+        <input id="bid-contact" maxlength="120" placeholder="وسيلة تواصل (واتساب أو بريد) يراها صاحب الإعلان فقط" ${cls}>
+        <p class="text-[11px] text-amber-600">تقديم العرض التزام جاد. المنصة لا تحتفظ بالأموال ولا تضمن الدفع أو التنفيذ.</p>
+        <button onclick="submitBid('${id}')" class="w-full bg-orange-500 text-white rounded-lg py-2 text-sm font-bold">${isAuc ? 'تأكيد المزايدة' : 'إرسال العرض'}</button>`);
+    }
+    async function submitBid(id) {
+      if (!currentUser) { openAuthModal(); return; }
+      const amt = parseFloat(document.getElementById('bid-amount').value);
+      const note = (document.getElementById('bid-note').value || '').trim().slice(0, 500);
+      const contact = (document.getElementById('bid-contact').value || '').trim().slice(0, 120);
+      if (!(amt > 0)) { alert('أدخل مبلغاً صحيحاً'); return; }
+      if (!contact) { alert('أدخل وسيلة تواصل'); return; }
+      const { error } = await supabaseClient.from('bids').insert({ listing_id: id, user_id: currentUser.id, amount: amt, note, contact });
+      if (error) { alert(error.message); return; }
+      closeListModal(); showRealtimeNotification('تم تسجيل عرضك ✓'); fetchOpportunitiesFromSupabase();
+    }
+    async function openBids(id) {
+      const it = opportunitiesData.find(i => i.id === id); if (!it) return;
+      const isAuc = it.category === 'auctions';
+      const { data, error } = await supabaseClient.from('bids').select('amount,note,contact,created_at').eq('listing_id', id).order('amount', { ascending: !isAuc });
+      if (error) { alert(error.message); return; }
+      if (!data.length) { showList('العروض المستلمة', '<p class="text-sm text-slate-500">لا عروض بعد.</p>'); return; }
+      showList('العروض المستلمة (' + data.length + ')', `<div class="text-xs text-slate-500">${isAuc ? 'مرتبة من الأعلى مزايدة' : 'مرتبة من الأقل سعراً'} · هذه البيانات تراها أنت والإدارة فقط</div>` +
+        data.map(b => `<div class="border rounded-xl p-3 text-sm space-y-1"><div class="font-bold">${sarFmt(b.amount)} <span class="text-[11px] font-normal text-slate-400">${fmtDateAr(b.created_at)}</span></div>${b.note ? `<div class="text-xs whitespace-pre-line">${esc(b.note)}</div>` : ''}<div class="text-xs">التواصل: <b>${esc(b.contact || '—')}</b></div></div>`).join(''));
+    }
+
+    // أدوات الترويج لصاحب الإعلان (عرضاً كان أو طلباً)
+    function ensureQR(cb) {
+      if (window.QRCode) return cb();
+      const sc = document.createElement('script');
+      sc.src = 'https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';
+      sc.onload = cb; document.head.appendChild(sc);
+    }
+    function copyPromo(elId) { const e = document.getElementById(elId); navigator.clipboard.writeText(e.value); showRealtimeNotification('تم النسخ ✓'); }
+    function openPromo(id) {
+      const it = opportunitiesData.find(i => i.id === id); if (!it) return;
+      const url = listingUrl(id), title = unesc(it.title);
+      const isReq = it.type === 'demand' || it.type === 'seeking_partner';
+      const ar = `📣 ${isReq ? 'مطلوب' : 'متاح'}: ${title}\n${CAT_AR[it.category] || ''}${it.city ? ' · ' + unesc(it.city) : ''}\nالتفاصيل والتواصل على منصة وِفَاق:\n${url}`;
+      const en = `📣 ${isReq ? 'Wanted' : 'Available'}: ${title}\nDetails & contact on Wefaq:\n${url}`;
+      const eu = encodeURIComponent(url), et = encodeURIComponent(ar);
+      const b = 'border rounded-lg px-3 py-1.5 text-xs font-bold';
+      showList('أدوات ترويج إعلانك', `
+        <div class="text-xs text-slate-500">انشر رابط إعلانك في مجموعات واتساب وتيليجرام وفيسبوك المناسبة لجمهورك. كل نشر يجلب زواراً جدداً.</div>
+        <div class="flex flex-wrap gap-2">
+          <a class="${b}" target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?text=${et}">واتساب</a>
+          <a class="${b}" target="_blank" rel="noopener noreferrer" href="https://t.me/share/url?url=${eu}&text=${encodeURIComponent(title)}">تيليجرام</a>
+          <a class="${b}" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=${eu}">فيسبوك</a>
+          <a class="${b}" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${eu}">X</a>
+          <a class="${b}" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/sharing/share-offsite/?url=${eu}">لينكدإن</a>
+          <a class="${b}" href="mailto:?subject=${encodeURIComponent(title)}&body=${et}">بريد</a>
+        </div>
+        <label class="text-xs font-semibold">نص جاهز بالعربية</label>
+        <textarea id="promo-ar" rows="4" readonly class="w-full border rounded-lg p-2 text-xs dark:bg-slate-800">${esc(ar)}</textarea>
+        <button onclick="copyPromo('promo-ar')" class="${b}">نسخ النص العربي</button>
+        <label class="text-xs font-semibold">English text</label>
+        <textarea id="promo-en" rows="3" readonly class="w-full border rounded-lg p-2 text-xs dark:bg-slate-800" dir="ltr">${esc(en)}</textarea>
+        <button onclick="copyPromo('promo-en')" class="${b}">Copy English</button>
+        <label class="text-xs font-semibold">رابط الإعلان و QR للطباعة أو الملصقات</label>
+        <input id="promo-link" readonly value="${esc(url)}" class="w-full border rounded-lg p-2 text-xs dark:bg-slate-800" dir="ltr">
+        <button onclick="copyPromo('promo-link')" class="${b}">نسخ الرابط</button>
+        <div id="promo-qr" class="flex justify-center bg-white p-3 rounded-lg"></div>`);
+      ensureQR(() => { const q = document.getElementById('promo-qr'); if (q && window.QRCode) { q.innerHTML = ''; new QRCode(q, { text: url, width: 160, height: 160 }); } });
+    }
+
+    function commissionNote(it){
+      if (!(it.amount > 0)) return 'العرض المجاني بلا أي عمولة.';
+      return 'عمولة المنصة 1.5% تُحتسب على العارض من قيمة الصفقة (لا تشمل التمويل والاستثمار حالياً)، ويمكن لمن تعثّرت ظروفه طلب الإعفاء عند النشر. الدفع عبر محفظة، وأرقامها تُرسل من الإدارة عند الطلب فقط (راجع الشروط).';
+    }
+    function renderContactExtras(it){
+      const box=document.getElementById('contact-extras'); if(!box||!it) return;
+      const ph=String(it.phone||'').replace(/[^0-9]/g,''), b='border rounded-lg px-3 py-1.5 text-xs font-bold';
+      const loc=`📍 ${regionText(it.region)}${it.city?' · '+it.city:''}`;
+      box.innerHTML=`<div class="w-full text-xs text-slate-500">${loc}</div><div class="w-full text-xs text-slate-500">📅 تاريخ الإعلان: ${fmtDateAr(it.createdTs)}${it.createdTs ? ' (' + agoAr(it.createdTs) + ')' : ''}</div><div class="w-full text-[11px] text-slate-500">${commissionNote(it)}</div>`
+        +(ph?`<a href="tel:+${ph}" class="${b}">📞 اتصال</a><a href="https://wa.me/${ph}" target="_blank" rel="noopener noreferrer" class="${b}">💬 واتساب مباشر</a><a href="sms:+${ph}" class="${b}">✉️ رسالة SMS</a><button type="button" onclick="navigator.clipboard.writeText('+${ph}');showRealtimeNotification('تم نسخ الرقم')" class="${b}">📋 نسخ الرقم</button>`:'')
+        +(it.telegram?`<a href="https://t.me/${it.telegram}" target="_blank" rel="noopener noreferrer" class="${b}">✈️ تيليجرام</a>`:'')
+        +(it.email?`<a href="mailto:${it.email}" class="${b}">✉️ بريد</a>`:'')
+        +(it.city?`<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(it.city.replace(/&amp;|&lt;|&gt;|&quot;|&#39;/g,' ')+' '+regionText(it.region).replace(/&[a-z#0-9]+;/g,' '))}" target="_blank" rel="noopener noreferrer" class="${b}">🗺️ الخريطة</a>`:'');
+    }
+    document.getElementById('whatsapp-template-text').parentElement.insertAdjacentHTML('afterend','<div id="contact-extras" class="flex flex-wrap gap-2"></div>');
+    document.getElementById('auth-btn').insertAdjacentHTML('beforebegin','<button id="mine-btn" onclick="openMine()" class="hidden bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-xs py-1.5 px-2 font-semibold">إعلاناتي</button>');
+    document.body.insertAdjacentHTML('beforeend',`<div id="list-modal" class="hidden fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-4"><div class="bg-white dark:bg-slate-900 rounded-2xl p-5 w-full max-w-xl max-h-[85vh] overflow-y-auto space-y-3">
+      <div class="flex justify-between items-center"><h3 id="list-title" class="font-bold text-lg"></h3><button onclick="closeListModal()" class="text-sm">إغلاق ✕</button></div><div id="list-body" class="space-y-2"></div></div></div>`);
+    const phEl=document.getElementById('new-phone');
+    if(phEl) phEl.parentElement.insertAdjacentHTML('afterend',`<div class="space-y-2 mt-2"><input id="new-city" maxlength="80" placeholder="المدينة / الحي (اختياري، ويحسّن المطابقة)" class="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg p-2 text-xs">
+      <input id="new-telegram" maxlength="33" placeholder="معرّف تيليجرام مثل @name (اختياري)" class="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg p-2 text-xs">
+      <input id="new-email" type="email" maxlength="120" placeholder="بريد للتواصل (اختياري)" class="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg p-2 text-xs">
+      <p class="text-[11px] text-amber-600">وسائل التواصل التي تكتبها (هاتف، تيليجرام، بريد) لا تظهر إلا للمستخدمين المسجّلين، أما المدينة والوصف فيظهران للجميع.</p>
+      <p class="text-[11px] text-slate-500">تنبيه: تُحتسب على العارض عمولة 1.5% من قيمة الصفقة المدفوعة عبر المنصة (لا تشمل التمويل والاستثمار ولا العروض المجانية، ويُعفى منها من تعثّرت ظروفه بطلب عند النشر)، والتفاصيل في الشروط.</p></div>`);
+    if(supabaseClient) supabaseClient.auth.onAuthStateChange(()=>{ setTimeout(()=>{ document.getElementById('mine-btn').classList.toggle('hidden',!currentUser); },0); });
+
+    // ===== Featured subscription, new-match badge, email alert toggle =====
+    const PLAN = { price: '', days: 30, payLink: '', contact: '' }; // ضع السعر ورابط الدفع ورقم واتساب الإدارة (أرقام فقط بمفتاح الدولة)
+    async function openSub() {
+      let status = '';
+      if (currentUser) {
+        const { data } = await supabaseClient.from('subscriptions').select('until').eq('user_id', currentUser.id).maybeSingle();
+        if (data && new Date(data.until) > new Date()) status = `<div class="text-xs bg-emerald-50 text-emerald-700 rounded p-2">اشتراكك فعّال حتى ${String(data.until).split('T')[0]}</div>`;
+      }
+      const wa = PLAN.contact ? ` عبر <a class="underline" target="_blank" rel="noopener noreferrer" href="https://wa.me/${PLAN.contact.replace(/[^0-9]/g,'')}">واتساب</a>` : '';
+      const pay = PLAN.payLink
+        ? `<a href="${PLAN.payLink}" target="_blank" rel="noopener noreferrer" class="block text-center bg-brand-600 text-white rounded-lg py-2 text-sm font-bold">ادفع ${esc(PLAN.price)} لمدة ${PLAN.days} يوماً</a><p class="text-[11px] text-slate-500">بعد الدفع أرسل إثبات الدفع والبريد المسجَّل به${wa}، ويُفعَّل اشتراكك يدوياً.</p>`
+        : '<p class="text-xs text-amber-600">الدفع الإلكتروني لم يُفعَّل بعد.</p>';
+      showList('الاشتراك المميز', status + `<ul class="text-sm list-disc pr-4 space-y-1"><li>تظهر إعلاناتك أولاً في القوائم.</li><li>شارة "⭐ مميز" على إعلاناتك.</li></ul><p class="text-[11px] text-slate-500">الاشتراك يزيد الظهور فقط، ولا يمنح شارة التوثيق ولا يضمن نتيجة.</p>` + pay + (currentUser ? '' : '<p class="text-xs">سجّل الدخول أولاً بنفس البريد الذي ستدفع به.</p>'));
+    }
+    async function grantFeatured(uid, days) {
+      const { data: cur } = await supabaseClient.from('subscriptions').select('until').eq('user_id', uid).maybeSingle();
+      const base = cur && new Date(cur.until) > new Date() ? new Date(cur.until) : new Date();
+      base.setDate(base.getDate() + days);
+      const { error } = await supabaseClient.from('subscriptions').upsert({ user_id: uid, until: base.toISOString(), updated_at: new Date().toISOString() });
+      alert(error ? error.message : 'تم التفعيل حتى ' + base.toISOString().split('T')[0]);
+      fetchOpportunitiesFromSupabase();
+    }
+    async function refreshMineBadge() {
+      const b = document.getElementById('mine-btn');
+      if (!b || !currentUser || !supabaseClient) return;
+      const key = 'wefaq_seen_' + currentUser.id; let seen = null;
+      try { seen = localStorage.getItem(key); if (!seen) { seen = new Date().toISOString(); localStorage.setItem(key, seen); } } catch (_) { seen = new Date().toISOString(); }
+      window.__lastSeen = new Date(seen);
+      const { data } = await supabaseClient.from('listings').select('id').eq('user_id', currentUser.id).eq('status', 'approved');
+      const ids = new Set();
+      (data || []).forEach(l => { const it = opportunitiesData.find(i => i.id === String(l.id)); if (it) findMatches(it).forEach(({ o }) => { if (o.uid !== currentUser.id && o.createdTs && new Date(o.createdTs) > window.__lastSeen) ids.add(o.id); }); });
+      b.textContent = ids.size ? 'إعلاناتي (' + ids.size + ' جديد)' : 'إعلاناتي';
+    }
+    const _fetchOpp = fetchOpportunitiesFromSupabase;
+    fetchOpportunitiesFromSupabase = async function () { await _fetchOpp(); await refreshMineBadge(); };
+    const _openMine = openMine;
+    openMine = async function () {
+      await _openMine(); if (!currentUser) return;
+      try { localStorage.setItem('wefaq_seen_' + currentUser.id, new Date().toISOString()); } catch (_) {}
+      document.getElementById('mine-btn').textContent = 'إعلاناتي';
+      const { data } = await supabaseClient.from('alert_optout').select('user_id').maybeSingle();
+      const off = !!data;
+      document.getElementById('list-body').insertAdjacentHTML('beforeend', `<button onclick="toggleAlerts(${off})" class="text-xs underline mt-2">${off ? 'تفعيل' : 'إيقاف'} تنبيهات البريد عن المطابقات الجديدة</button>`);
+    };
+    async function toggleAlerts(off) {
+      const q = supabaseClient.from('alert_optout');
+      const { error } = off ? await q.delete().eq('user_id', currentUser.id) : await q.insert({});
+      if (error) { alert(error.message); return; }
+      closeListModal(); openMine();
+    }
+    if (supabaseClient) supabaseClient.auth.onAuthStateChange(() => { setTimeout(refreshMineBadge, 0); });
+
+    // ===== Bans =====
+    async function banUser(uid) {
+      const reason = prompt('سبب الحظر (مثلاً: عدم سداد العمولة المستحقة)');
+      if (reason === null) return;
+      const { error } = await supabaseClient.from('banned_users').upsert({ user_id: uid, reason: reason.trim().slice(0, 200) });
+      if (error) { alert(error.message); return; }
+      await loadPending(); await loadBanned(); fetchOpportunitiesFromSupabase();
+    }
+    async function unbanUser(uid) {
+      const { error } = await supabaseClient.from('banned_users').delete().eq('user_id', uid);
+      if (error) { alert(error.message); return; }
+      await loadPending(); await loadBanned(); fetchOpportunitiesFromSupabase();
+    }
+    async function loadBanned() {
+      const box = document.getElementById('admin-banned'); if (!box) return;
+      const { data, error } = await supabaseClient.from('banned_users').select('user_id,reason').order('created_at', { ascending: false });
+      if (error) { box.textContent = error.message; return; }
+      if (!data.length) { box.innerHTML = '<p class="text-xs text-slate-500">لا أحد.</p>'; return; }
+      const { data: ls } = await supabaseClient.from('listings').select('user_id,title').in('user_id', data.map(x => x.user_id));
+      box.innerHTML = data.map(b => { const l = (ls || []).find(x => x.user_id === b.user_id);
+        return `<div class="border rounded-lg p-2 text-xs"><div class="font-bold">${l ? esc(l.title) : esc(b.user_id)}</div><div class="text-slate-500">${esc(b.reason || '')}</div><button onclick="unbanUser('${esc(b.user_id)}')" class="mt-1 border rounded px-2 py-0.5">رفع الحظر</button></div>`; }).join('');
+    }
+    const _openAdmin = openAdmin;
+    openAdmin = async function () { await _openAdmin(); await loadBanned(); await loadAdminStats(); };
+    async function checkBanned() {
+      if (!currentUser || !supabaseClient) return;
+      const { data } = await supabaseClient.from('banned_users').select('reason').eq('user_id', currentUser.id).maybeSingle();
+      if (data) { alert('تم حظر حسابك من المنصة لمخالفة الشروط' + (data.reason ? ': ' + data.reason : '')); await supabaseClient.auth.signOut(); }
+    }
+    if (supabaseClient) supabaseClient.auth.onAuthStateChange(() => { setTimeout(checkBanned, 0); });
+
+    // =====================================================
+    // لوحة المستخدم + لوحة إدارة معززة + إشعارات المطابقة
+    // =====================================================
+    function dashCard(label, value, sub) {
+      return `<div class="rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 p-3 text-center">
+        <div class="text-[10px] text-slate-500">${label}</div>
+        <div class="text-xl font-black text-brand-600 dark:text-emerald-400">${value}</div>
+        ${sub ? `<div class="text-[10px] text-slate-400">${sub}</div>` : ''}
+      </div>`;
+    }
+
+    async function loadAdminStats() {
+      const host = document.getElementById('admin-list');
+      if (!host || !supabaseClient) return;
+      try {
+        const [all, rej, bans, waivers] = await Promise.all([
+          supabaseClient.from('listings').select('id', { count: 'exact', head: true }).eq('status', 'approved'),
+          supabaseClient.from('listings').select('id', { count: 'exact', head: true }).eq('status', 'rejected'),
+          supabaseClient.from('banned_users').select('user_id', { count: 'exact', head: true }),
+          supabaseClient.from('fee_waivers').select('user_id', { count: 'exact', head: true })
+        ]);
+        const statsHtml = `<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-3">
+          ${dashCard('منشور', all.count ?? '—')}
+          ${dashCard('مخفي', rej.count ?? '—')}
+          ${dashCard('محظورون', bans.count ?? '—')}
+          ${dashCard('طلبات إعفاء', waivers.count ?? '—')}
+        </div>
+        <div class="flex flex-wrap gap-2 mb-3 text-xs">
+          <button type="button" onclick="loadPending()" class="bg-brand-600 text-white px-3 py-1.5 rounded-lg font-bold">تحديث القائمة</button>
+          <button type="button" onclick="notifyAdminDigest()" class="border px-3 py-1.5 rounded-lg font-bold">ملخص سريع</button>
+        </div>`;
+        if (!host.dataset.statsInjected) {
+          host.insertAdjacentHTML('beforebegin', `<div id="admin-stats-box">${statsHtml}</div>`);
+          host.dataset.statsInjected = '1';
+        } else {
+          const box = document.getElementById('admin-stats-box');
+          if (box) box.innerHTML = statsHtml;
+        }
+      } catch (e) { console.warn('admin stats', e); }
+    }
+
+    function notifyAdminDigest() {
+      const n = opportunitiesData.length;
+      const q = opportunitiesData.filter(i => i.category === 'quran').length;
+      const t = opportunitiesData.filter(i => i.category === 'tenders' || i.category === 'auctions').length;
+      showRealtimeNotification(`الملخص: ${n} إعلان ظاهر · ${q} قرآن · ${t} مناقصة/مزاد`);
+    }
+
+    // --- لوحة المستخدم (تعزيز openMine) ---
+    const _openMineCore = openMine;
+    openMine = async function () {
+      if (!currentUser) { openAuthModal(); return; }
+      const { data, error } = await supabaseClient.from('listings').select('id,title,status,category,created_at').eq('user_id', currentUser.id).order('created_at', { ascending: false });
+      if (error) { alert(error.message); return; }
+
+      let totalMatches = 0;
+      let newMatches = 0;
+      const rows = (data || []).map(l => {
+        const it = opportunitiesData.find(i => i.id === String(l.id));
+        const ms = it ? findMatches(it) : [];
+        totalMatches += ms.length;
+        const fresh = ms.filter(({ o }) => window.__lastSeen && o.createdTs && new Date(o.createdTs) > window.__lastSeen);
+        newMatches += fresh.length;
+        const st = l.status === 'approved' ? 'منشور' : (l.status === 'rejected' ? 'مخفي' : l.status);
+        return `<div class="border rounded-xl p-3 text-sm space-y-2">
+          <div class="flex justify-between gap-2">
+            <div>
+              <div class="font-bold">${esc(l.title)}</div>
+              <div class="text-[11px] text-slate-500">${st} · ${CAT_AR[l.category] || l.category || ''} · ${ms.length} مطابقة${fresh.length ? ' · <span class="text-emerald-600 font-bold">' + fresh.length + ' جديدة</span>' : ''}</div>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-1">
+            <button type="button" onclick="closeListModal();openMatches('${esc(l.id)}')" class="border rounded-lg px-2 py-1 text-xs font-bold bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300">المطابقات</button>
+            <button type="button" onclick="closeListModal();openPromo('${esc(l.id)}')" class="border rounded-lg px-2 py-1 text-xs font-bold">ترويج</button>
+            <button type="button" onclick="deleteMine('${esc(l.id)}')" class="border rounded-lg px-2 py-1 text-xs text-red-600">حذف</button>
+          </div>
+        </div>`;
+      });
+
+      let alertBtn = '';
+      try {
+        const { data: opt } = await supabaseClient.from('alert_optout').select('user_id').eq('user_id', currentUser.id).maybeSingle();
+        const off = !!opt;
+        alertBtn = `<button type="button" onclick="toggleAlerts(${off})" class="text-xs underline">${off ? 'تفعيل' : 'إيقاف'} تنبيهات المطابقات</button>`;
+      } catch (_) {}
+
+      const head = `<div class="grid grid-cols-3 gap-2 mb-3">
+        ${dashCard('إعلاناتي', (data || []).length)}
+        ${dashCard('مطابقات', totalMatches)}
+        ${dashCard('جديدة', newMatches, 'منذ آخر زيارة')}
+      </div>
+      <div class="flex flex-wrap gap-2 mb-3 text-xs">
+        <button type="button" onclick="openCreateModal()" class="bg-brand-600 text-white px-3 py-1.5 rounded-lg font-bold">+ إعلان جديد</button>
+        <button type="button" onclick="openSub()" class="border px-3 py-1.5 rounded-lg font-bold">⭐ اشتراك مميز</button>
+        <button type="button" onclick="requestMatchNotifyPermission()" class="border px-3 py-1.5 rounded-lg font-bold">إشعارات المتصفح</button>
+        ${alertBtn}
+      </div>
+      <p class="text-[11px] text-slate-500 mb-2">المطابقات تُحدَّث مع كل مزامنة. الإشعارات تظهر عند وجود مطابقات جديدة لإعلاناتك.</p>`;
+
+      showList('لوحة حسابي', head + (rows.length ? rows.join('') : '<p class="text-sm text-slate-500">لا توجد إعلانات بعد. انشر أول فرصة أو طلب.</p>'));
+
+      try { localStorage.setItem('wefaq_seen_' + currentUser.id, new Date().toISOString()); } catch (_) {}
+      const mb = document.getElementById('mine-btn');
+      if (mb) mb.textContent = 'حسابي';
+    };
+
+    // --- إشعارات مطابقة ---
+    function requestMatchNotifyPermission() {
+      if (!('Notification' in window)) {
+        alert('المتصفح لا يدعم الإشعارات');
+        return;
+      }
+      Notification.requestPermission().then(p => {
+        showRealtimeNotification(p === 'granted' ? 'تم تفعيل إشعارات المتصفح ✓' : 'لم يُمنح الإذن');
+        if (p === 'granted') scanMatchNotifications(true);
+      });
+    }
+
+    function scanMatchNotifications(force) {
+      if (!currentUser) return;
+      let seen;
+      try { seen = localStorage.getItem('wefaq_match_notified_' + currentUser.id); } catch (_) {}
+      const seenSet = new Set((seen || '').split(',').filter(Boolean));
+      const mine = opportunitiesData.filter(i => i.uid === currentUser.id);
+      const freshIds = [];
+      let count = 0;
+      mine.forEach(it => {
+        findMatches(it).forEach(({ o }) => {
+          if (o.uid === currentUser.id) return;
+          const key = it.id + '>' + o.id;
+          if (!seenSet.has(key)) {
+            freshIds.push(key);
+            count++;
+          }
+        });
+      });
+      if (!count) {
+        if (force) showRealtimeNotification('لا مطابقات جديدة حالياً');
+        return;
+      }
+      const title = 'مطابقات جديدة على وِفَاق';
+      const body = `لديك ${count} تطابقاً جديداً مع إعلاناتك`;
+      showRealtimeNotification(body);
+      if ('Notification' in window && Notification.permission === 'granted') {
+        try { new Notification(title, { body }); } catch (_) {}
+      }
+      freshIds.forEach(k => seenSet.add(k));
+      try {
+        localStorage.setItem('wefaq_match_notified_' + currentUser.id, [...seenSet].slice(-200).join(','));
+      } catch (_) {}
+      const mb = document.getElementById('mine-btn');
+      if (mb && currentUser) mb.textContent = 'حسابي (' + count + ' جديد)';
+    }
+
+    // زر أوضح للحساب + إعادة تسمية
+    (function enhanceMineBtn() {
+      const b = document.getElementById('mine-btn');
+      if (b) {
+        b.textContent = 'حسابي';
+        b.title = 'لوحة المستخدم: إعلاناتك والمطابقات';
+      }
+    })();
+
+    // بعد كل جلب بيانات: افحص المطابقات
+    const __fetchOpp2 = fetchOpportunitiesFromSupabase;
+    fetchOpportunitiesFromSupabase = async function () {
+      await __fetchOpp2();
+      if (currentUser) setTimeout(() => scanMatchNotifications(false), 800);
+    };
+
+    if (supabaseClient) {
+      supabaseClient.auth.onAuthStateChange(() => {
+        setTimeout(() => {
+          const b = document.getElementById('mine-btn');
+          if (b) b.classList.toggle('hidden', !currentUser);
+          if (currentUser) scanMatchNotifications(false);
+        }, 0);
+      });
+    }
+
+    // ===== توثيق المستخدمين / طلبات الشارة =====
+    async function loadVerificationQueue() {
+      if (!supabaseClient || !isAdmin) return;
+      let box = document.getElementById('admin-verify-list');
+      if (!box) {
+        const modal = document.getElementById('admin-modal');
+        if (!modal) return;
+        const inner = modal.querySelector('.space-y-3') || modal.firstElementChild;
+        if (!inner) return;
+        inner.insertAdjacentHTML('beforeend', `
+          <h4 class="font-bold pt-3 text-sm">طلبات التوثيق</h4>
+          <div id="admin-verify-list" class="space-y-2"></div>`);
+        box = document.getElementById('admin-verify-list');
+      }
+      box.innerHTML = '<p class="text-xs text-slate-500">جارٍ التحميل...</p>';
+      const { data, error } = await supabaseClient
+        .from('verification_requests')
+        .select('id,listing_id,user_id,request_type,doc_link,note,status,created_at')
+        .eq('status', 'pending')
+        .order('created_at', { ascending: false })
+        .limit(40);
+      if (error) {
+        box.innerHTML = '<p class="text-xs text-amber-600">شغّل ملف supabase-verification.sql لتفعيل طابور التوثيق.</p>';
+        return;
+      }
+      if (!data.length) {
+        box.innerHTML = '<p class="text-xs text-slate-500">لا طلبات معلّقة.</p>';
+        return;
+      }
+      const ids = data.map(x => x.listing_id);
+      const { data: ls } = await supabaseClient.from('listings').select('id,title').in('id', ids);
+      const titleOf = id => ((ls || []).find(x => String(x.id) === String(id)) || {}).title || id;
+      box.innerHTML = data.map(r => `
+        <div class="border rounded-lg p-2 text-xs space-y-1">
+          <div class="font-bold">${esc(titleOf(r.listing_id))}</div>
+          <div class="text-slate-500">نوع: <b>${esc(r.request_type)}</b> · ${esc((r.created_at || '').split('T')[0])}</div>
+          ${r.note ? `<div>${esc(r.note)}</div>` : ''}
+          ${r.doc_link ? `<a class="underline text-blue-600" target="_blank" rel="noopener" href="${esc(r.doc_link)}">فتح المستند</a>` : ''}
+          <div class="flex flex-wrap gap-1 pt-1">
+            <button type="button" onclick="resolveVerification('${esc(r.id)}','${esc(r.listing_id)}','${esc(r.request_type)}','approved')" class="bg-brand-600 text-white rounded px-2 py-1 font-bold">قبول ومنح الشارة</button>
+            <button type="button" onclick="resolveVerification('${esc(r.id)}','${esc(r.listing_id)}','','rejected')" class="border rounded px-2 py-1">رفض</button>
+          </div>
+        </div>`).join('');
+    }
+
+    async function resolveVerification(reqId, listingId, badge, decision) {
+      if (!supabaseClient) return;
+      const { error: e1 } = await supabaseClient.from('verification_requests').update({ status: decision }).eq('id', reqId);
+      if (e1) { alert(e1.message); return; }
+      if (decision === 'approved' && badge) {
+        const { error: e2 } = await supabaseClient.from('listings').update({ badge }).eq('id', listingId);
+        if (e2) { alert(e2.message); return; }
+      }
+      showRealtimeNotification(decision === 'approved' ? 'تم منح الشارة ✓' : 'تم رفض الطلب');
+      await loadVerificationQueue();
+      fetchOpportunitiesFromSupabase();
+    }
+
+    const __openAdminV = openAdmin;
+    openAdmin = async function () {
+      await __openAdminV();
+      await loadVerificationQueue();
+    };
+
+    // طلب توثيق لاحق من لوحة الحساب
+    async function openVerifyRequestForm() {
+      if (!currentUser) { openAuthModal(); return; }
+      const mine = opportunitiesData.filter(i => i.uid === currentUser.id);
+      if (!mine.length) {
+        showList('طلب توثيق', '<p class="text-sm text-slate-500">انشر إعلاناً أولاً ثم اطلب التوثيق.</p>');
+        return;
+      }
+      const opts = mine.map(i => `<option value="${esc(i.id)}">${esc(i.title)}</option>`).join('');
+      showList('طلب توثيق لإعلان', `
+        <select id="vr-listing" class="w-full border rounded-lg p-2 text-sm dark:bg-slate-800">${opts}</select>
+        <select id="vr-type" class="w-full border rounded-lg p-2 text-sm dark:bg-slate-800">
+          <option value="sanad">إجازة / سند</option>
+          <option value="verified">ترخيص / سجل</option>
+          <option value="feasibility">دراسة جدوى</option>
+          <option value="reviewed">مراجعة عامة</option>
+        </select>
+        <input id="vr-link" type="url" placeholder="رابط المستند" class="w-full border rounded-lg p-2 text-sm dark:bg-slate-800">
+        <textarea id="vr-note" rows="2" placeholder="ملاحظة" class="w-full border rounded-lg p-2 text-sm dark:bg-slate-800"></textarea>
+        <button type="button" onclick="submitLateVerification()" class="w-full bg-brand-600 text-white rounded-lg py-2 text-sm font-bold">إرسال للإدارة</button>
+      `);
+    }
+    async function submitLateVerification() {
+      const listing_id = document.getElementById('vr-listing').value;
+      const request_type = document.getElementById('vr-type').value;
+      const doc_link = (document.getElementById('vr-link').value || '').trim().slice(0, 500);
+      const note = (document.getElementById('vr-note').value || '').trim().slice(0, 400);
+      const { error } = await supabaseClient.from('verification_requests').insert({
+        listing_id, user_id: currentUser.id, request_type, doc_link: doc_link || null, note: note || null, status: 'pending'
+      });
+      if (error) { alert(error.message + '\n(تأكد من تشغيل supabase-verification.sql)'); return; }
+      closeListModal();
+      showRealtimeNotification('تم إرسال طلب التوثيق ✓');
+    }
+
+    // زر توثيق داخل لوحة الحساب (عند فتحها)
+    const __openMineV = openMine;
+    openMine = async function () {
+      await __openMineV();
+      const body = document.getElementById('list-body');
+      if (body && currentUser) {
+        body.insertAdjacentHTML('afterbegin', `<button type="button" onclick="openVerifyRequestForm()" class="mb-2 text-xs font-bold border border-blue-300 text-blue-700 dark:text-blue-300 rounded-lg px-3 py-1.5">🛡️ طلب توثيق لإعلان سابق</button>`);
+      }
+    };
+
+    // PWA خفيف
+    (function initLightPWA() {
+      if (!('serviceWorker' in navigator)) return;
+      try {
+        const code = `self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('fetch',e=>{e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)))});`;
+        const url = URL.createObjectURL(new Blob([code], { type: 'application/javascript' }));
+        navigator.serviceWorker.register(url).catch(() => {});
+      } catch (_) {}
+    })();
+
+    // =====================================================
+    // ترويج المنصة: بعد النشر + طابور الإدارة
+    // =====================================================
+    const PROMO_CHANNELS = {
+      telegram: '', // مثال: https://t.me/wefaq_khair
+      facebook: '', // مثال: https://facebook.com/wefaq
+      x: ''         // مثال: https://x.com/wefaq
+    };
+
+    function promoTextFor(id) {
+      const it = opportunitiesData.find(i => String(i.id) === String(id));
+      const url = listingUrl(id);
+      const title = it ? unesc(it.title) : 'إعلان على وِفَاق';
+      const cat = it ? (CAT_AR[it.category] || it.category || '') : '';
+      const isReq = it && (it.type === 'demand' || it.type === 'seeking_partner' || it.type === 'seeking_funds');
+      const ar = `📣 ${isReq ? 'مطلوب' : 'متاح'} عبر منصة وِفَاق\n${title}\n${cat ? cat + '\n' : ''}${url}`;
+      return { ar, url, title, it };
+    }
+
+    /** بعد النشر مباشرة */
+    function openPostPublishPromo(id) {
+      const { ar, url } = promoTextFor(id);
+      showList('تم النشر — ماذا بعد؟', `
+        <p class="text-sm text-slate-600 dark:text-slate-300">إعلانك أصبح على المنصة. اختر طريقة الترويج:</p>
+        <div class="grid gap-2">
+          <button type="button" onclick="requestPlatformPromo('${esc(id)}')" class="w-full bg-rose-600 hover:bg-rose-700 text-white rounded-lg py-2.5 text-sm font-bold">
+            📣 اطلب الترويج عبر قنوات المنصة
+          </button>
+          <p class="text-[11px] text-slate-500">يُراجع الطلب من الإدارة ثم يُنشر على قنوات وِفَاق الرسمية (تيليجرام / فيسبوك / X) عند التوفر.</p>
+          <button type="button" onclick="closeListModal();openPromo('${esc(id)}')" class="w-full border rounded-lg py-2 text-sm font-bold">
+            أدوات مشاركة بنفسك (واتساب، تيليجرام، QR…)
+          </button>
+          <button type="button" onclick="closeListModal();openMatches('${esc(id)}')" class="w-full border rounded-lg py-2 text-sm font-bold text-indigo-700 dark:text-indigo-300">
+            عرض المطابقات الآن
+          </button>
+        </div>
+        <label class="text-xs font-semibold block mt-2">نص جاهز للنسخ</label>
+        <textarea id="post-promo-ar" rows="4" readonly class="w-full border rounded-lg p-2 text-xs dark:bg-slate-800">${esc(ar)}</textarea>
+        <button type="button" onclick="navigator.clipboard.writeText(document.getElementById('post-promo-ar').value);showRealtimeNotification('تم النسخ ✓')" class="border rounded-lg px-3 py-1.5 text-xs font-bold">نسخ النص</button>
+        <input type="hidden" id="post-promo-url" value="${esc(url)}">
+      `);
+    }
+
+    async function requestPlatformPromo(id) {
+      if (!currentUser) { openAuthModal(); return; }
+      const { ar, url, title } = promoTextFor(id);
+      // محاولة Supabase
+      if (supabaseClient) {
+        const { error } = await supabaseClient.from('promo_requests').insert({
+          listing_id: id,
+          user_id: currentUser.id,
+          status: 'pending',
+          suggested_text: ar.slice(0, 1000)
+        });
+        if (!error) {
+          showRealtimeNotification('تم إرسال طلب الترويج للإدارة ✓');
+          closeListModal();
+          return;
+        }
+        console.warn('promo_requests', error);
+      }
+      // احتياطي محلي
+      try {
+        const key = 'wefaq_promo_queue';
+        const q = JSON.parse(localStorage.getItem(key) || '[]');
+        q.unshift({ id, title, url, text: ar, at: new Date().toISOString(), user: currentUser.email || currentUser.id });
+        localStorage.setItem(key, JSON.stringify(q.slice(0, 100)));
+      } catch (_) {}
+      showRealtimeNotification('طُلب الترويج (محلياً). للإدارة السحابية شغّل supabase-promo.sql');
+      closeListModal();
+    }
+
+    async function loadPromoQueue() {
+      if (!isAdmin) return;
+      let box = document.getElementById('admin-promo-list');
+      if (!box) {
+        const modal = document.getElementById('admin-modal');
+        if (!modal) return;
+        const inner = modal.querySelector('.space-y-3') || modal.firstElementChild;
+        if (!inner) return;
+        inner.insertAdjacentHTML('beforeend', `
+          <h4 class="font-bold pt-3 text-sm">طابور ترويج المنصة</h4>
+          <p class="text-[11px] text-slate-500">انسخ النص وانشره على قنوات وِفَاق، ثم علّم «تم النشر».</p>
+          <div id="admin-promo-list" class="space-y-2"></div>`);
+        box = document.getElementById('admin-promo-list');
+      }
+      box.innerHTML = '<p class="text-xs text-slate-500">جارٍ التحميل...</p>';
+
+      let rows = [];
+      if (supabaseClient) {
+        const { data, error } = await supabaseClient
+          .from('promo_requests')
+          .select('id,listing_id,suggested_text,status,created_at,user_id')
+          .eq('status', 'pending')
+          .order('created_at', { ascending: false })
+          .limit(40);
+        if (!error && data) rows = data.map(r => ({
+          reqId: r.id,
+          listingId: r.listing_id,
+          text: r.suggested_text,
+          at: r.created_at,
+          cloud: true
+        }));
+      }
+      // دمج المحلي
+      try {
+        const local = JSON.parse(localStorage.getItem('wefaq_promo_queue') || '[]');
+        local.forEach(x => rows.push({
+          reqId: 'local-' + x.id + '-' + (x.at || ''),
+          listingId: x.id,
+          text: x.text,
+          at: x.at,
+          cloud: false
+        }));
+      } catch (_) {}
+
+      if (!rows.length) {
+        box.innerHTML = '<p class="text-xs text-slate-500">لا طلبات ترويج معلّقة. (إن فشل السحابي شغّل supabase-promo.sql)</p>';
+        return;
+      }
+
+      box.innerHTML = rows.map((r, idx) => {
+        const { ar, url, title } = promoTextFor(r.listingId);
+        const text = r.text || ar;
+        const tid = 'promo-txt-' + idx;
+        return `<div class="border rounded-lg p-2 text-xs space-y-1">
+          <div class="font-bold">${esc(title)}</div>
+          <div class="text-slate-500">${esc((r.at || '').toString().split('T')[0])} ${r.cloud ? '· سحابي' : '· محلي'}</div>
+          <textarea id="${tid}" rows="3" class="w-full border rounded p-1 text-[11px] dark:bg-slate-800">${esc(text)}</textarea>
+          <div class="flex flex-wrap gap-1">
+            <button type="button" onclick="navigator.clipboard.writeText(document.getElementById('${tid}').value);showRealtimeNotification('نُسخ للنشر')" class="bg-slate-900 text-white rounded px-2 py-1 font-bold">نسخ للنشر</button>
+            <a class="border rounded px-2 py-1" target="_blank" rel="noopener" href="${esc(url)}">فتح الرابط</a>
+            <button type="button" onclick="markPromoDone('${esc(r.reqId)}',${r.cloud ? 'true' : 'false'},'${esc(r.listingId)}')" class="border border-emerald-500 text-emerald-700 rounded px-2 py-1 font-bold">تم النشر ✓</button>
+          </div>
+        </div>`;
+      }).join('');
+    }
+
+    async function markPromoDone(reqId, cloud, listingId) {
+      if (cloud && supabaseClient && !String(reqId).startsWith('local-')) {
+        const { error } = await supabaseClient.from('promo_requests').update({ status: 'published' }).eq('id', reqId);
+        if (error) { alert(error.message); return; }
+      } else {
+        try {
+          const key = 'wefaq_promo_queue';
+          let q = JSON.parse(localStorage.getItem(key) || '[]');
+          q = q.filter(x => String(x.id) !== String(listingId));
+          localStorage.setItem(key, JSON.stringify(q));
+        } catch (_) {}
+      }
+      showRealtimeNotification('تم تعليم الطلب كمنشور');
+      await loadPromoQueue();
+    }
+
+    // من البطاقة: طلب ترويج المنصة
+    function requestPromoFromCard(id) {
+      if (!currentUser) { openAuthModal(); return; }
+      requestPlatformPromo(id);
+    }
+
+    // زر إضافي في dealBox لأصحاب الإعلان
+    const __dealBoxHTML = typeof dealBoxHTML === 'function' ? dealBoxHTML : null;
+    if (__dealBoxHTML) {
+      dealBoxHTML = function (it) {
+        let html = __dealBoxHTML(it);
+        const mine = !!(currentUser && it.uid === currentUser.id);
+        if (mine) {
+          html += `<div class="mb-2"><button type="button" onclick="requestPromoFromCard('${it.id}')" class="text-[11px] font-bold px-3 py-1 rounded-lg bg-violet-500/10 text-violet-700 dark:text-violet-300 border border-violet-500/30">📣 اطلب ترويج قنوات المنصة</button></div>`;
+        }
+        return html;
+      };
+    }
+
+    const __openAdminPromo = openAdmin;
+    openAdmin = async function () {
+      await __openAdminPromo();
+      await loadPromoQueue();
+    };
+  </script>
+</body>
+</html>
